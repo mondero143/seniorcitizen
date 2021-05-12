@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="dailypayment" pageWidth="612" pageHeight="936" columnWidth="612" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="20" uuid="981b0b6a-29e8-45ec-bb83-4e1e190fa5ce">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="177"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="fscap2"/>
+	<property name="ireport.scriptlethandling" value="0"/>
+	<property name="ireport.encoding" value="UTF-8"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<parameter name="masname1" class="java.lang.String"/>
+	<parameter name="objid" class="java.lang.String"/>
+	<parameter name="datefrom" class="java.lang.String"/>
+	<parameter name="dateto" class="java.lang.String"/>
+	<parameter name="barangay" class="java.lang.String"/>
+	<parameter name="street" class="java.lang.String"/>
+	<parameter name="preparedby" class="java.lang.String"/>
+	<parameter name="position" class="java.lang.String"/>
+	<parameter name="street1" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select * from masdailypayment
+inner join registration]]>
+	</queryString>
+	<field name="objidmas" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="objidmas"/>
+		<property name="com.jaspersoft.studio.field.label" value="objidmas"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="masdailypayment"/>
+	</field>
+	<field name="id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="masdailypayment"/>
+	</field>
+	<field name="datepayment" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="datepayment"/>
+		<property name="com.jaspersoft.studio.field.label" value="datepayment"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="masdailypayment"/>
+	</field>
+	<field name="ornomas" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ornomas"/>
+		<property name="com.jaspersoft.studio.field.label" value="ornomas"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="masdailypayment"/>
+	</field>
+	<field name="amountmas" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="amountmas"/>
+		<property name="com.jaspersoft.studio.field.label" value="amountmas"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="masdailypayment"/>
+	</field>
+	<field name="reqamount" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="reqamount"/>
+		<property name="com.jaspersoft.studio.field.label" value="reqamount"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="masdailypayment"/>
+	</field>
+	<field name="advance" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="advance"/>
+		<property name="com.jaspersoft.studio.field.label" value="advance"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="masdailypayment"/>
+	</field>
+	<field name="balance" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="balance"/>
+		<property name="com.jaspersoft.studio.field.label" value="balance"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="masdailypayment"/>
+	</field>
+	<field name="status" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="status"/>
+		<property name="com.jaspersoft.studio.field.label" value="status"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="masdailypayment"/>
+	</field>
+	<field name="datedeleted" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="datedeleted"/>
+		<property name="com.jaspersoft.studio.field.label" value="datedeleted"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="masdailypayment"/>
+	</field>
+	<field name="masname" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="masname"/>
+		<property name="com.jaspersoft.studio.field.label" value="masname"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="masdailypayment"/>
+	</field>
+	<field name="user" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="user"/>
+		<property name="com.jaspersoft.studio.field.label" value="user"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="masdailypayment"/>
+	</field>
+	<field name="delete_user" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="delete_user"/>
+		<property name="com.jaspersoft.studio.field.label" value="delete_user"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="masdailypayment"/>
+	</field>
+	<field name="objid" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="objid"/>
+		<property name="com.jaspersoft.studio.field.label" value="objid"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="COLUMN_15" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="datecreate" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="datecreate"/>
+		<property name="com.jaspersoft.studio.field.label" value="datecreate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="firstname" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="firstname"/>
+		<property name="com.jaspersoft.studio.field.label" value="firstname"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="middlename" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="middlename"/>
+		<property name="com.jaspersoft.studio.field.label" value="middlename"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="lastname" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="lastname"/>
+		<property name="com.jaspersoft.studio.field.label" value="lastname"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="address" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="address"/>
+		<property name="com.jaspersoft.studio.field.label" value="address"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="barangay" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="barangay"/>
+		<property name="com.jaspersoft.studio.field.label" value="barangay"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="city" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="city"/>
+		<property name="com.jaspersoft.studio.field.label" value="city"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="province" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="province"/>
+		<property name="com.jaspersoft.studio.field.label" value="province"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="age" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="age"/>
+		<property name="com.jaspersoft.studio.field.label" value="age"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="gender" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="gender"/>
+		<property name="com.jaspersoft.studio.field.label" value="gender"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="dateofbirth" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="dateofbirth"/>
+		<property name="com.jaspersoft.studio.field.label" value="dateofbirth"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="placeofbirth" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="placeofbirth"/>
+		<property name="com.jaspersoft.studio.field.label" value="placeofbirth"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="civilstatus" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="civilstatus"/>
+		<property name="com.jaspersoft.studio.field.label" value="civilstatus"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="citizenship" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="citizenship"/>
+		<property name="com.jaspersoft.studio.field.label" value="citizenship"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="timecreate" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="timecreate"/>
+		<property name="com.jaspersoft.studio.field.label" value="timecreate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="mas" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="mas"/>
+		<property name="com.jaspersoft.studio.field.label" value="mas"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="controlno" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="controlno"/>
+		<property name="com.jaspersoft.studio.field.label" value="controlno"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="orno" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="orno"/>
+		<property name="com.jaspersoft.studio.field.label" value="orno"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="amount" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="amount"/>
+		<property name="com.jaspersoft.studio.field.label" value="amount"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="datemasreg" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="datemasreg"/>
+		<property name="com.jaspersoft.studio.field.label" value="datemasreg"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="deceased" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="deceased"/>
+		<property name="com.jaspersoft.studio.field.label" value="deceased"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="b1" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="b1"/>
+		<property name="com.jaspersoft.studio.field.label" value="b1"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="b2" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="b2"/>
+		<property name="com.jaspersoft.studio.field.label" value="b2"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="b3" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="b3"/>
+		<property name="com.jaspersoft.studio.field.label" value="b3"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="age1" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="age1"/>
+		<property name="com.jaspersoft.studio.field.label" value="age1"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="age2" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="age2"/>
+		<property name="com.jaspersoft.studio.field.label" value="age2"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="age3" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="age3"/>
+		<property name="com.jaspersoft.studio.field.label" value="age3"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="r1" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="r1"/>
+		<property name="com.jaspersoft.studio.field.label" value="r1"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="r2" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="r2"/>
+		<property name="com.jaspersoft.studio.field.label" value="r2"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="r3" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="r3"/>
+		<property name="com.jaspersoft.studio.field.label" value="r3"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="dateissuedentitle" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="dateissuedentitle"/>
+		<property name="com.jaspersoft.studio.field.label" value="dateissuedentitle"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="entitlement" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="entitlement"/>
+		<property name="com.jaspersoft.studio.field.label" value="entitlement"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="COLUMN_48" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="datedeleted"/>
+		<property name="com.jaspersoft.studio.field.label" value="datedeleted"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="spouse" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="spouse"/>
+		<property name="com.jaspersoft.studio.field.label" value="spouse"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="COLUMN_50" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="user"/>
+		<property name="com.jaspersoft.studio.field.label" value="user"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="COLUMN_51" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="delete_user"/>
+		<property name="com.jaspersoft.studio.field.label" value="delete_user"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="statusreg" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="statusreg"/>
+		<property name="com.jaspersoft.studio.field.label" value="statusreg"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="pending" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="pending"/>
+		<property name="com.jaspersoft.studio.field.label" value="pending"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="registration"/>
+	</field>
+	<field name="idp" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="idp"/>
+		<property name="com.jaspersoft.studio.field.label" value="idp"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="preparedby"/>
+	</field>
+	<field name="preparedby" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="preparedby"/>
+		<property name="com.jaspersoft.studio.field.label" value="preparedby"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="preparedby"/>
+	</field>
+	<field name="pposition" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="pposition"/>
+		<property name="com.jaspersoft.studio.field.label" value="pposition"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="preparedby"/>
+	</field>
+	<variable name="totalamount" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{amountmas}]]></variableExpression>
+	</variable>
+	<variable name="total" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{amountmas}]]></variableExpression>
+	</variable>
+	<variable name="countno" class="java.lang.String" calculation="Count"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="144" splitType="Stretch">
+			<staticText>
+				<reportElement key="staticText" x="0" y="59" width="612" height="30" uuid="27c4a069-167c-4a4d-bcb9-e4e7475c0df9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[INDIVIDUAL LEDGER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText" x="420" y="96" width="59" height="20" uuid="fb1a0f68-0e46-45fe-a38a-762336c1553f"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date From:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText" x="57" y="96" width="44" height="20" uuid="e759afc3-62f0-4d6a-98f2-e5cb335fada8"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="116" y="97" width="301" height="18" uuid="5bdd39ad-bb0b-4b1b-aa4c-d18c0cb32409"/>
+				<textFieldExpression><![CDATA[$P{masname1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="staticText-1" x="9" y="13" width="592" height="16" uuid="a1c69c96-447d-4c5b-91bd-53d1f3edf969"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[San Carlos City Federation of Senior Citizens Association of the Philippines]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-2" x="9" y="29" width="592" height="16" uuid="d8359470-6e05-43d3-bdbc-8f5d1f105186"/>
+				<textElement textAlignment="Center">
+					<font isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[(SCCFSCAP) SAN CARLOS CITY NEGROS OCCIDENTAL, INDIVIDUAL LEDGER OF MAS DEATH PAYMENT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText" x="420" y="116" width="59" height="20" uuid="fc152e1d-105d-4321-8385-6e955fed6287"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date To:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="480" y="97" width="100" height="19" uuid="6ef5d9c7-06af-4816-aabc-40d46f73d906"/>
+				<textFieldExpression><![CDATA[$P{datefrom}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="480" y="117" width="100" height="19" uuid="2901ae46-5ea6-4e8b-92d2-972c6a0bfb95"/>
+				<textFieldExpression><![CDATA[$P{dateto}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="staticText" x="57" y="116" width="60" height="20" uuid="cdbc3bfb-50f7-438b-9ac6-fa24be5c558a"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Barangay:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="116" y="118" width="301" height="18" uuid="d82cda46-d1e3-4e6b-add7-1614b2b6b88b"/>
+				<textFieldExpression><![CDATA[""+$P{street}+", "+$P{barangay}+""]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="18" splitType="Stretch">
+			<staticText>
+				<reportElement x="99" y="0" width="135" height="18" uuid="f0d496fb-91e9-4852-9d14-f9e4ef68185c"/>
+				<box topPadding="0">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top"/>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="234" y="0" width="165" height="18" uuid="b0cd2ec1-68f2-4e4d-b082-b24376e3597b"/>
+				<box topPadding="0">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top"/>
+				<text><![CDATA[OrNo.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="399" y="0" width="143" height="18" uuid="eb88ff7f-394c-42d5-a623-06ed523ea465"/>
+				<box topPadding="0">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top"/>
+				<text><![CDATA[Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="0" width="39" height="18" uuid="84dc70c8-8835-432a-a14b-b76818395e9a"/>
+				<box topPadding="0">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top"/>
+				<text><![CDATA[No.]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<textField>
+				<reportElement x="99" y="0" width="135" height="16" uuid="0a4bae2b-a550-4004-bfce-ea3f55010e3f"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{datepayment}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="234" y="0" width="165" height="16" uuid="0c49cb3b-c5fb-4521-a4b0-33425e9ab519"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{ornomas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="0" width="39" height="16" uuid="ef365819-be6b-4e3c-8a44-dfd8dc6d7666"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{countno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="399" y="0" width="143" height="16" uuid="1b5315f6-ced5-4fbc-87a7-e1b941984686"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{amountmas}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="154" splitType="Stretch">
+			<staticText>
+				<reportElement key="staticText" x="61" y="41" width="76" height="20" uuid="2099442b-5392-42fb-ad6f-968668a0f1c4"/>
+				<text><![CDATA[Prepared by:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="121" y="62" width="150" height="31" uuid="1967e24d-281a-44bb-9647-87082709ab39"/>
+				<textElement textAlignment="Center" markup="styled">
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{preparedby}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="121" y="75" width="150" height="30" uuid="7236a384-f5c9-47c3-82b8-04e39ad93c17"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{position}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="60" y="0" width="339" height="18" uuid="760345c7-31f7-4d9a-9b41-b23aa434874b"/>
+				<box topPadding="2" rightPadding="2">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Top"/>
+				<text><![CDATA[Total Amount Paid:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="399" y="0" width="143" height="18" uuid="20a20657-3860-4543-8361-919e56917719"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{totalamount}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

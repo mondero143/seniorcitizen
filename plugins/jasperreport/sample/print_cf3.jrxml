@@ -1,0 +1,2810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="print_cf3" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="4" bottomMargin="4" whenResourceMissingType="Empty" uuid="1b38019e-1f2f-47bb-a4fe-dbaf65927763">
+	<property name="ireport.zoom" value="1.2078825000000182"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="style1"/>
+	<parameter name="id" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT * FROM `patientinfo` WHERE id = $P{id}]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pcase_no" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="plastname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pfirstname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pmiddlename" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="psuffix" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date_admitted" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="time_admitted" class="java.sql.Time">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date_discharge" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="time_discharge" class="java.sql.Time">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="RegNow" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="chief_comp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="b_history" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="gen_survey" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="altered_ser" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vital_bp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="altered" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vital_cr" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vital_rr" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vital_temp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="heent" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="chest" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cvc" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="abdomen" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="genito_urinary" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="skin_extemities" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="neoro_exam" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="course_ward" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pert_lab_findings" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="disposition_discharge" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date_consult" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vital_signs_normal" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ascertain_low_risk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date_lmp" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="age_menarch" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="grapa" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="para" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="obs_t" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="obs_p" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="obs_a" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="obs_l" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="multi_pregnancy" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ova_cyst" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="myoma_uteri" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="placen_previa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="history_misc" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="histtory_stillbirth" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="history_pre_eclampsia" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="history_eclampsia" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="prema_contract" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hypertension" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="heart_disease" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="diabetes" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="thyroid_disorder" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="obesity" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="moderate_asthma" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="epilepsy" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="renal_disease" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bleeding_disorder" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="his_prev_cs" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="his_uterine_myomectomy" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="admitting_diag" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="orient_yes" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="orient_no" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date_exp_delivered" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date_visit_2nd" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="aog_weeks_2nd" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="weight_2nd" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cardiac_2nd" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="respiratory_2nd" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bloodpres_2nd" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="temp_2nd" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date_visit_3rd" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="aog_3rd" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="weight_3rd" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cardiac_3rd" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="respiratory_3rd" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bloodpres_3rd" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="temp_3rd" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date_visit_4th" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="aog_weeks_4th" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="weight_4th" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cardiac_4th" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="repiratory_4th" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bloodpres_4th" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="temp_4th" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date_visit_5th" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="aog_5th" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="weight_5th" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cardiac_5th" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="repiratory_5th" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bloodpres_5th" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="temp_5th" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="834" splitType="Stretch">
+			<staticText>
+				<reportElement x="3" y="127" width="278" height="20" uuid="19a606f7-9e5a-48d8-a4ee-406a1f297d7a"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[1. PhilHealth Accreditation No. (PAN) - Institutional Health Care Provider:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="306" y="127" width="101" height="20" uuid="7742b950-cce5-4afb-a7a9-5f20187522b5"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[H  0  6  0  1  1  7  5  6]]></text>
+			</staticText>
+			<line>
+				<reportElement x="302" y="140" width="105" height="1" uuid="37bd64dd-c2d7-4630-8ad3-d26e79c68c77"/>
+			</line>
+			<line>
+				<reportElement x="302" y="127" width="1" height="14" uuid="192f1a49-d09e-4d2d-b331-75f18110fc40"/>
+			</line>
+			<line>
+				<reportElement x="316" y="127" width="1" height="14" uuid="632d4205-51f0-4f0b-84f6-79b739600b6a"/>
+			</line>
+			<line>
+				<reportElement x="327" y="127" width="1" height="14" uuid="dd0a82f2-0742-4de9-a5bb-1bd0e413a15e"/>
+			</line>
+			<line>
+				<reportElement x="338" y="127" width="1" height="14" uuid="05f3d753-d30e-4e8e-ba49-d363625243ce"/>
+			</line>
+			<line>
+				<reportElement x="349" y="127" width="1" height="14" uuid="795a6061-83ba-4941-9f39-466a4094adf4"/>
+			</line>
+			<line>
+				<reportElement x="360" y="127" width="1" height="14" uuid="12ec3821-2905-48e9-9f91-09af8a24e32c"/>
+			</line>
+			<line>
+				<reportElement x="371" y="127" width="1" height="14" uuid="3dbd76dd-b75f-4e9d-b8f6-955014a736cf"/>
+			</line>
+			<line>
+				<reportElement x="383" y="127" width="1" height="14" uuid="634e8468-1ed5-4231-945f-9014a8b0ad56"/>
+			</line>
+			<line>
+				<reportElement x="406" y="127" width="1" height="14" uuid="c322be7d-4822-4bda-8663-684b34e6c5c0"/>
+			</line>
+			<line>
+				<reportElement x="394" y="127" width="1" height="14" uuid="3956a278-be29-4e25-bcbf-92f64a8b6a6d"/>
+			</line>
+			<staticText>
+				<reportElement x="3" y="159" width="278" height="20" uuid="a6ddd630-8c22-4fb9-a9d8-f9af78eba539"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[2. Name of Patient]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="194" width="349" height="1" uuid="ed2f1c7c-d4a5-4917-a57c-59061185c852"/>
+			</line>
+			<staticText>
+				<reportElement x="4" y="198" width="357" height="20" uuid="d294eab3-c801-48df-a892-6dc969c82b76"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[Last Name,                         First Name,                       Middle Name                    (example: Dela Cruz, Juan Jr., Sipag)  ]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="394" y="159" width="160" height="119" uuid="fbe7a733-69cb-41c3-a0a9-4bec1748ed70"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="397" y="166" width="134" height="20" uuid="d97567b5-9799-41e0-953e-b7b34644ec07"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[3. Chief Complaint / Reason for Admission:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="218" width="73" height="20" uuid="eb4fe514-e4ca-4c96-9bdd-45bd8f0fc61c"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[4. Date Admitted:  ]]></text>
+			</staticText>
+			<elementGroup>
+				<elementGroup>
+					<elementGroup>
+						<elementGroup>
+							<elementGroup>
+								<line>
+									<reportElement x="85" y="233" width="27" height="1" uuid="40b6ff7d-924b-4f59-8a7c-9636636d5d80"/>
+								</line>
+								<line>
+									<reportElement x="84" y="220" width="1" height="14" uuid="db94d80f-9153-4eff-ae16-6f740899d89a"/>
+								</line>
+								<line>
+									<reportElement x="112" y="220" width="1" height="14" uuid="c576d93f-fbe9-4af0-974f-5aa26cca2c44"/>
+								</line>
+								<line>
+									<reportElement x="98" y="223" width="1" height="10" uuid="8bd6d48f-57cd-436c-9252-9fd89dfbe2b5"/>
+								</line>
+							</elementGroup>
+						</elementGroup>
+					</elementGroup>
+				</elementGroup>
+			</elementGroup>
+			<line>
+				<reportElement x="116" y="227" width="6" height="1" uuid="6c87a4c3-7a65-43a9-8af0-b2068e6b7b52"/>
+			</line>
+			<line>
+				<reportElement x="138" y="223" width="1" height="10" uuid="a01f8636-c357-4e5e-bec3-96b78fc11bb2"/>
+			</line>
+			<line>
+				<reportElement x="125" y="233" width="27" height="1" uuid="b41a93fe-d74d-4e06-a2f5-40b461589ae5"/>
+			</line>
+			<line>
+				<reportElement x="156" y="227" width="6" height="1" uuid="55b09c38-aa21-4fb6-b91b-846cd9363500"/>
+			</line>
+			<line>
+				<reportElement x="124" y="220" width="1" height="14" uuid="80985e4e-5ebe-4e25-bda7-80e58cbd69c1"/>
+			</line>
+			<line>
+				<reportElement x="151" y="220" width="1" height="14" uuid="bc465310-aad0-4bf9-a593-a5697b406312"/>
+			</line>
+			<line>
+				<reportElement x="164" y="220" width="1" height="14" uuid="31cdc8c2-417d-42e6-a795-47181d878e92"/>
+			</line>
+			<line>
+				<reportElement x="165" y="233" width="50" height="1" uuid="28459a2e-2135-48af-8863-c5b448e8d6c7"/>
+			</line>
+			<line>
+				<reportElement x="215" y="220" width="1" height="14" uuid="45618a81-689e-4fa7-bd79-6719029be454"/>
+			</line>
+			<line>
+				<reportElement x="176" y="223" width="1" height="10" uuid="b4d44d79-b30f-49fc-ad63-d8327582dea8"/>
+			</line>
+			<line>
+				<reportElement x="190" y="224" width="1" height="10" uuid="8a1d85ee-09b3-4e13-8781-de039767c5fc"/>
+			</line>
+			<line>
+				<reportElement x="204" y="224" width="1" height="10" uuid="d928abb8-8547-47d5-8ddc-06b5226eda17"/>
+			</line>
+			<staticText>
+				<reportElement x="82" y="235" width="33" height="20" uuid="5ea7a5e2-4a5b-4530-b6fa-4ba72322adef"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Month]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="122" y="236" width="33" height="20" uuid="639b9990-9fde-4b31-a3fd-bf002e26059e"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Day]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="171" y="236" width="33" height="20" uuid="f29f5152-d238-4b6c-8748-ec17caf6d50a"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Year]]></text>
+			</staticText>
+			<line>
+				<reportElement x="306" y="232" width="21" height="1" uuid="1ff60dd2-71fc-47bf-98ad-d1249a33d9a2"/>
+			</line>
+			<line>
+				<reportElement x="305" y="219" width="1" height="14" uuid="e71b0ce3-ce1a-4573-94b6-65309fec7dff"/>
+			</line>
+			<staticText>
+				<reportElement x="240" y="220" width="59" height="20" uuid="1f33e8ba-4568-4df7-bc6c-1264d66a42bc"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[Time Admitted:  ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="327" y="219" width="1" height="14" uuid="bb2a855e-f930-4795-be1b-b21c6648cadb"/>
+			</line>
+			<line>
+				<reportElement x="350" y="232" width="21" height="1" uuid="61135f74-c108-4598-b46a-193148cadc4e"/>
+			</line>
+			<line>
+				<reportElement x="371" y="219" width="1" height="14" uuid="e5fabc49-be6e-4ec2-9861-8da1075f14cf"/>
+			</line>
+			<line>
+				<reportElement x="349" y="219" width="1" height="14" uuid="10a9a35b-c7e3-4084-a4e2-d81259c80939"/>
+			</line>
+			<staticText>
+				<reportElement x="302" y="233" width="29" height="20" uuid="305bf76e-16e4-4c9b-9ede-93b7580edca8"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[hh-mm]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="346" y="233" width="29" height="20" uuid="44c1a9a0-6f5c-4b5e-ab9a-6c7ad8cdf9fe"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[hh-mm]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="324" y="221" width="21" height="20" uuid="eacb6c9d-ed15-4575-92bf-b2fe3d7838c1"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[AM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="369" y="221" width="21" height="20" uuid="0fecf42e-c8f3-4e21-809b-aa750dc2ef55"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[PM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="349" y="275" width="29" height="20" uuid="4f732e4e-bde3-46b8-9037-ca5cf1d3236a"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[hh-mm]]></text>
+			</staticText>
+			<line>
+				<reportElement x="207" y="266" width="1" height="10" uuid="026a68fc-ce3f-4d4c-b175-1df7a6a83f76"/>
+			</line>
+			<line>
+				<reportElement x="309" y="274" width="21" height="1" uuid="a08f8848-a0ae-4805-bfd7-3b5debe5a013"/>
+			</line>
+			<staticText>
+				<reportElement x="240" y="262" width="62" height="20" uuid="956ad2bb-54de-429d-ab72-47b7839a721d"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[Time Discharge:  ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="88" y="275" width="27" height="1" uuid="cf0604a7-d38b-4563-9c4c-1260ffa43d1b"/>
+			</line>
+			<line>
+				<reportElement x="119" y="269" width="6" height="1" uuid="ee750154-83da-4737-93ee-b5b494282194"/>
+			</line>
+			<line>
+				<reportElement x="218" y="262" width="1" height="14" uuid="ccbb1951-8e26-4224-b145-caa175783070"/>
+			</line>
+			<staticText>
+				<reportElement x="174" y="278" width="33" height="20" uuid="4dd447bb-ec38-4f63-aa67-d97daae68c62"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Year]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="85" y="277" width="33" height="20" uuid="b929b047-5b10-4df7-9eaf-bc6d4cb307e1"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Month]]></text>
+			</staticText>
+			<line>
+				<reportElement x="159" y="269" width="6" height="1" uuid="98747fbf-4f7e-4c01-98ef-43f3953a54ca"/>
+			</line>
+			<line>
+				<reportElement x="168" y="275" width="50" height="1" uuid="700566bd-3a5b-40c6-9fcc-b360a1c0c6fb"/>
+			</line>
+			<line>
+				<reportElement x="179" y="265" width="1" height="10" uuid="8f70baf8-037f-4ec0-b485-35044fff5394"/>
+			</line>
+			<line>
+				<reportElement x="127" y="262" width="1" height="14" uuid="2dbde3bc-8a6f-4c01-873d-970469c7c00e"/>
+			</line>
+			<line>
+				<reportElement x="87" y="262" width="1" height="14" uuid="12fe9241-ade9-4fa9-be29-34beba334a4e"/>
+			</line>
+			<line>
+				<reportElement x="141" y="265" width="1" height="10" uuid="fd48e774-a80d-4e49-a064-00879be818cf"/>
+			</line>
+			<line>
+				<reportElement x="115" y="262" width="1" height="14" uuid="a80803ce-50c4-4310-86d4-4f965b2e0b45"/>
+			</line>
+			<staticText>
+				<reportElement x="2" y="260" width="73" height="20" uuid="9fda999e-3a35-459b-8b96-aff91fb9ee79"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[5. Date Discharged:     ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="352" y="261" width="1" height="14" uuid="990a5466-f7cb-44f3-836f-ff4504e96f66"/>
+			</line>
+			<staticText>
+				<reportElement x="125" y="278" width="33" height="20" uuid="bf25dfb1-643f-4e1c-980a-c3aa21b36eb7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Day]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="305" y="275" width="29" height="20" uuid="ad62c92e-83c9-4e45-9860-41db118a5555"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[hh-mm]]></text>
+			</staticText>
+			<line>
+				<reportElement x="101" y="265" width="1" height="10" uuid="4a901984-7110-494f-a131-8ccf5844ea93"/>
+			</line>
+			<line>
+				<reportElement x="330" y="261" width="1" height="14" uuid="9842a72b-e676-4d03-a99b-89e82da6273d"/>
+			</line>
+			<line>
+				<reportElement x="374" y="261" width="1" height="14" uuid="6cea1cf2-e6d8-403d-b774-7c8b8327f833"/>
+			</line>
+			<line>
+				<reportElement x="128" y="275" width="27" height="1" uuid="f267ca6f-9113-487d-a257-c4a2ebfd2f54"/>
+			</line>
+			<line>
+				<reportElement x="154" y="262" width="1" height="14" uuid="d61b8e53-855a-416f-8d57-ef474ea3a780"/>
+			</line>
+			<line>
+				<reportElement x="308" y="261" width="1" height="14" uuid="422df0ab-f166-407c-89db-2d213df08ba0"/>
+			</line>
+			<line>
+				<reportElement x="193" y="266" width="1" height="10" uuid="f69b9d7e-907b-49c0-ae15-3bad0af8b7b6"/>
+			</line>
+			<line>
+				<reportElement x="167" y="262" width="1" height="14" uuid="7aae8300-15b3-43ea-bbed-12dcd3371065"/>
+			</line>
+			<staticText>
+				<reportElement x="327" y="263" width="21" height="20" uuid="e1cf4453-ce70-4724-8b51-9be8af3397a8"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[AM]]></text>
+			</staticText>
+			<line>
+				<reportElement x="353" y="274" width="21" height="1" uuid="162bae3b-ee33-41df-af72-6194796048b5"/>
+			</line>
+			<line>
+				<reportElement x="3" y="296" width="551" height="1" uuid="ddc56103-cb3c-4ca3-96cc-a2fada2267d0"/>
+			</line>
+			<staticText>
+				<reportElement x="4" y="304" width="186" height="20" uuid="83ae583a-2800-45cb-a215-9b0cd8f46a16"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[6. Brief History of Present Illness / OB History:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="372" y="263" width="21" height="20" uuid="718410d9-ea51-49d5-b996-bccb9569bfb4"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[PM]]></text>
+			</staticText>
+			<line>
+				<reportElement x="4" y="393" width="551" height="1" uuid="4dbc587d-12ec-4be2-98f4-e468b74a2971"/>
+			</line>
+			<staticText>
+				<reportElement x="3" y="399" width="237" height="20" uuid="5f828a7c-6f9a-4412-b9c0-3e5733895b88"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[7. Physical Examination ( Pertinent Findings per System )]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="421" width="65" height="20" uuid="aaafa372-0e8c-4db3-b22f-54baa8486a18"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[General Survey:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="441" width="41" height="20" uuid="ac9a78a0-12ae-4325-988c-7ce1fd179c7c"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[Vital Signs ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="84" y="441" width="18" height="20" uuid="c4a449db-b019-4591-9808-334fa73c6c15"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[BP :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="134" y="441" width="15" height="20" uuid="65b6cee7-ea6a-4270-93d9-fd821f21c2f3"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[CR:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="441" width="15" height="20" uuid="dd4f356f-b6d1-410e-ac1e-5f42c65c516f"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[RR:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="225" y="442" width="52" height="20" uuid="0d6b05d1-6aaf-47b5-9644-06f711f99298"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[Temperature:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="465" width="31" height="20" uuid="19147a91-a27d-4847-bb13-47c7807ef626"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[HEENT ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="69" y="446" width="4" height="12" uuid="4bbbf5f4-dab9-44ea-825e-e7cfd71b33c4"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="466" width="4" height="12" uuid="85976097-3464-4446-9900-45c9ed1c4952"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="490" width="51" height="20" uuid="65c8d3e5-7935-4445-a11f-5156b0ee2988"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[Chest/Lungs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="492" width="4" height="12" uuid="d3da244d-4dcc-4c91-9949-84839e66544b"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="518" width="51" height="20" uuid="f284551a-29b0-46d2-8dfd-81876ff0507d"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[CVS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="520" width="4" height="12" uuid="aa9de6c8-8f9a-450a-8bb5-fa7691f79cb0"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="443" width="41" height="20" uuid="997944b7-1563-4e57-bb17-1f8c2d514430"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[Abdomen]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="393" y="443" width="4" height="12" uuid="2220bbd2-7ce0-44aa-96b5-76a2450d89f4"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="465" width="41" height="20" uuid="c43bc1e1-6426-49b0-b8a7-2b299c64718e"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[GU ( IE )]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="394" y="467" width="4" height="12" uuid="c84dddba-f3a4-4017-9c2e-df917706fcee"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="489" width="60" height="20" uuid="8de92736-d2d5-4e11-8f37-afa5baab6dd7"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[Skin/Extremities]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="394" y="492" width="4" height="12" uuid="74b6db81-75b9-4dd2-93f4-aeeb0fa0e024"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="316" y="520" width="74" height="20" uuid="ada352c3-9ea4-4425-8c68-d8503d1e2b00"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[Neuro Examination]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="394" y="522" width="4" height="12" uuid="4984f1b6-af96-4874-8cea-bb8e6bfdd695"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="2" y="553" width="551" height="1" uuid="9a4b2574-29ae-4eda-9673-bb79a2acbf04"/>
+			</line>
+			<staticText>
+				<reportElement x="4" y="560" width="237" height="20" uuid="affa5be6-df6b-4ac9-bcbb-4858e8c12aee"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[8. Course in the Wards (attach additional sheets if necessary):]]></text>
+			</staticText>
+			<line>
+				<reportElement x="3" y="666" width="551" height="1" uuid="1c6385dc-62ce-4fc3-a024-e6e7e4fc6d0b"/>
+			</line>
+			<staticText>
+				<reportElement x="3" y="668" width="388" height="20" uuid="1887115c-094e-4558-9a9f-71a98e4dd88d"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[9. Pertinent Laboratory and Diagnostic Findings: ( CBC, Urinalysis, Fecalysis, X-ray, Biopsy, etc.)]]></text>
+			</staticText>
+			<line>
+				<reportElement x="4" y="777" width="551" height="1" uuid="9d4e14d3-ac7c-4dce-92b6-be175332637c"/>
+			</line>
+			<staticText>
+				<reportElement x="4" y="793" width="114" height="20" uuid="4a4cdd4f-2532-4407-be47-78762c46b08b"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[10. Disposition on Discharge:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="123" y="793" width="14" height="12" uuid="f43016e9-bf39-4543-b6f2-4f2852f7aa7b"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="150" y="793" width="35" height="12" uuid="c4136cdb-6029-4721-a032-b2460fc5d6e8"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[Improved]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="205" y="793" width="14" height="12" uuid="fe061817-8fe4-46ab-8593-d2fdb648cd8f"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="236" y="793" width="50" height="12" uuid="fc152af3-bed7-4d89-846e-395f7556027b"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[Transferred]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="305" y="793" width="14" height="12" uuid="8729811e-481d-4e23-b21d-9c06d7fd54ce"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="335" y="793" width="26" height="12" uuid="96d89067-3238-445e-b37c-0801ba6d6b9e"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[HAMA]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="382" y="793" width="14" height="12" uuid="862476d9-5015-417c-905f-4208a5b3dd7c"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="404" y="793" width="54" height="12" uuid="0cca6c15-eb3f-42a4-89af-5216eab20873"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[Absconded]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="464" y="793" width="14" height="12" uuid="229bff3f-9c8a-4ac6-b16f-b3454105e178"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="488" y="793" width="54" height="12" uuid="e6b58136-109d-43b0-905c-5d55916b39c1"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[Expired]]></text>
+			</staticText>
+			<line>
+				<reportElement x="4" y="820" width="551" height="1" uuid="35f78bf1-9022-4fc9-903d-60cf1f9893b8"/>
+			</line>
+			<line>
+				<reportElement x="2" y="109" width="551" height="1" uuid="b53c0148-e650-435b-ac1d-dae2bd02aba5"/>
+			</line>
+			<line>
+				<reportElement x="2" y="95" width="551" height="1" uuid="58de2f76-fedd-436e-9fb8-8b67424c6066"/>
+			</line>
+			<line>
+				<reportElement x="2" y="111" width="551" height="1" uuid="9fae3aeb-cd16-4db8-84a4-a470a7616213"/>
+			</line>
+			<line>
+				<reportElement x="3" y="93" width="551" height="1" uuid="97da1fb6-72af-4ac3-8899-dfff8712b26b"/>
+			</line>
+			<staticText>
+				<reportElement x="195" y="98" width="164" height="13" uuid="839f1ac1-b27c-4000-878d-d6243586d11f"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PART I - PATIENT'S CLINICAL RECORD]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="14" width="158" height="64" uuid="bf8e5b3a-25b4-452f-a2b9-099fa20ff4cc"/>
+				<imageExpression><![CDATA["C:\\xampp\\htdocs\\cf3_project\\images\\ph_logo1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="330" y="14" width="221" height="13" uuid="82f6ac00-2d88-407d-8fd0-333229bf81d6"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[This form may be reproduced and is NOT FOR SALE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="482" y="27" width="49" height="41" uuid="a831d8f1-216a-4f49-9f3d-281574076e53"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial Narrow" size="28" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CF3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="482" y="60" width="54" height="13" uuid="17399582-b163-4cf0-9ffb-df93edef732d"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(Claim Form)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="458" y="73" width="113" height="13" uuid="26f3d13a-f7f2-480d-a22f-c6fd05ecc040"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[revised November 2013 ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="394" y="186" width="159" height="91" uuid="c0dc52a9-f73c-423a-95f9-e43a4430e148"/>
+				<textFieldExpression><![CDATA[$F{chief_comp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-2" y="178" width="100" height="20" uuid="2b9fdef7-c005-4410-b77f-b91316355aab"/>
+				<textFieldExpression><![CDATA[$F{plastname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="179" width="100" height="20" uuid="b94b9891-a9f5-4f8d-b9bc-896efd2bab14"/>
+				<textFieldExpression><![CDATA[$F{pfirstname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="154" y="179" width="100" height="20" uuid="feb36946-0c2c-4d0d-9fd2-afa4a9732755"/>
+				<textFieldExpression><![CDATA[$F{pmiddlename}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="834">
+			<break>
+				<reportElement x="0" y="2" width="100" height="1" uuid="d45fad22-960c-47da-b081-c3d5891ae3d9"/>
+			</break>
+			<line>
+				<reportElement x="0" y="14" width="555" height="1" uuid="db658c78-06f9-434b-a9c1-de1741b99045"/>
+			</line>
+			<line>
+				<reportElement x="0" y="16" width="555" height="1" uuid="0515655d-2885-47f5-85c7-4ffeb8eb7e2c"/>
+			</line>
+			<line>
+				<reportElement x="0" y="29" width="555" height="1" uuid="8e60a855-9f20-4864-b83c-f4e438682f7a"/>
+			</line>
+			<line>
+				<reportElement x="0" y="31" width="555" height="1" uuid="a0b32dfc-442a-4fa5-9c25-5f9a238b288c"/>
+			</line>
+			<staticText>
+				<reportElement x="213" y="17" width="129" height="13" uuid="e3614780-aec5-4bd7-b47f-c8b97b9eaae3"/>
+				<textElement>
+					<font fontName="Arial Narrow" isBold="true"/>
+				</textElement>
+				<text><![CDATA[- MATERNITY CARE PACKAGE]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="37" width="555" height="1" uuid="3faa2dec-806b-41dc-8a9e-2aeaa6124f2b"/>
+			</line>
+			<line>
+				<reportElement x="0" y="54" width="555" height="1" uuid="89714a2c-6b92-415b-8113-e094a7d62b4f"/>
+			</line>
+			<staticText>
+				<reportElement x="195" y="38" width="164" height="13" forecolor="#CC0000" uuid="babd1b38-a7ac-4251-ac9b-6277dabfabba"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PRENATAL CONSULTATION]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="64" width="98" height="12" uuid="221361f5-11e4-4283-86fa-5457616672a4"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[ 1.  Initial Prenatal Consultation]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="113" y="80" width="33" height="20" uuid="60d5fbe1-76a3-471d-b4bf-1afe2fbdcd36"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="6" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Month]]></text>
+			</staticText>
+			<line>
+				<reportElement x="155" y="65" width="1" height="14" uuid="9a11e42f-3abe-4cc4-8fde-3f07b61de97f"/>
+			</line>
+			<line>
+				<reportElement x="187" y="72" width="6" height="1" uuid="2ab3175e-e625-49dd-b3fd-eed6ac237a1b"/>
+			</line>
+			<line>
+				<reportElement x="182" y="65" width="1" height="14" uuid="865f34ab-5aa4-4e6b-9525-347d066ec831"/>
+			</line>
+			<line>
+				<reportElement x="169" y="68" width="1" height="10" uuid="01af1adc-26eb-474b-89c1-e5cb735a4f05"/>
+			</line>
+			<line>
+				<reportElement x="195" y="65" width="1" height="14" uuid="d801fea0-59d6-4636-be4c-f82e25c112b1"/>
+			</line>
+			<line>
+				<reportElement x="116" y="78" width="27" height="1" uuid="8f861b2c-8618-49f0-99dd-0581f37c900a"/>
+			</line>
+			<line>
+				<reportElement x="196" y="78" width="50" height="1" uuid="745eef74-32a2-493e-868c-059a099fb4b0"/>
+			</line>
+			<line>
+				<reportElement x="246" y="65" width="1" height="14" uuid="5b78df51-fc9a-4884-a64e-ec3e15e0a527"/>
+			</line>
+			<line>
+				<reportElement x="221" y="69" width="1" height="10" uuid="9e6460d4-5989-40a7-ae91-7bcb4af51c75"/>
+			</line>
+			<line>
+				<reportElement x="156" y="78" width="27" height="1" uuid="a6374261-a1c1-4e05-be8b-43297aaf0123"/>
+			</line>
+			<staticText>
+				<reportElement x="153" y="81" width="33" height="20" uuid="24caed85-5bd1-4c84-88f4-3ba05a92c04c"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="6" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Day]]></text>
+			</staticText>
+			<line>
+				<reportElement x="147" y="72" width="6" height="1" uuid="d3e69a36-830a-4b69-9ccd-517f0be1b5c7"/>
+			</line>
+			<line>
+				<reportElement x="207" y="68" width="1" height="10" uuid="68b2ee41-77ab-48f4-b5ab-5e1b54daf439"/>
+			</line>
+			<staticText>
+				<reportElement x="202" y="81" width="33" height="20" uuid="ca25eacf-fee0-44dd-bd67-7e63f7a69406"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="6" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Year]]></text>
+			</staticText>
+			<line>
+				<reportElement x="143" y="65" width="1" height="14" uuid="9d4714eb-4e7c-48d9-a0b1-2e63006741ff"/>
+			</line>
+			<line>
+				<reportElement x="129" y="68" width="1" height="10" uuid="10c0642c-2989-44f1-94e4-b3cd192463e7"/>
+			</line>
+			<line>
+				<reportElement x="235" y="69" width="1" height="10" uuid="df3c21e2-1282-448a-9bb8-85408207ec98"/>
+			</line>
+			<line>
+				<reportElement x="115" y="65" width="1" height="14" uuid="55e46814-37f4-442f-9e71-d82cd566153f"/>
+			</line>
+			<staticText>
+				<reportElement x="2" y="101" width="139" height="12" uuid="e6145518-b206-48c8-9054-4988d137ee35"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[  2. Clinical History and Physical Examination]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="118" width="92" height="12" uuid="f2715b76-7418-411a-b9ce-1ef30d0cd3e8"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[  a. Vital signs are normal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="142" width="145" height="12" uuid="f38db142-636f-4e82-b618-a86a435c3fee"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[b.  Ascertain the present  Pregnancy is low-Risk]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="187" y="121" width="8" height="8" uuid="43c3d1a1-14f4-4da3-8fba-00fa727362db"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="187" y="143" width="8" height="8" uuid="835de5c4-1df3-4e1c-a750-a4ce35d3b6a2"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="253" y="118" width="92" height="12" uuid="2e19de6f-2a93-4851-a2ff-3f8d162795e7"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[  c.  Menstrual History]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="253" y="140" width="92" height="12" uuid="58877670-b893-48ca-87fe-73ea1bd1b2b8"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[ d.  Obstetric History]]></text>
+			</staticText>
+			<elementGroup>
+				<line>
+					<reportElement x="494" y="117" width="1" height="10" uuid="613943f9-11a9-4e04-92da-3cf440f49054"/>
+				</line>
+				<line>
+					<reportElement x="480" y="116" width="1" height="10" uuid="7906e980-caef-49d5-9a85-4aec899691af"/>
+				</line>
+				<line>
+					<reportElement x="420" y="120" width="6" height="1" uuid="abad84dd-60c4-4a46-b861-cd3f8c844eaa"/>
+				</line>
+				<line>
+					<reportElement x="469" y="126" width="50" height="1" uuid="82bb1791-4878-465c-8fd5-a515b1591d84"/>
+				</line>
+				<line>
+					<reportElement x="389" y="126" width="27" height="1" uuid="f97bad1d-8734-4d60-9309-1bd92af839b4"/>
+				</line>
+				<line>
+					<reportElement x="460" y="120" width="6" height="1" uuid="e2ce9018-5a91-4a4f-abfe-6903a5126898"/>
+				</line>
+				<line>
+					<reportElement x="455" y="113" width="1" height="14" uuid="e31f5cba-1b6f-4932-a309-b2c7ae3b1051"/>
+				</line>
+				<line>
+					<reportElement x="429" y="126" width="27" height="1" uuid="f44ef756-2451-4a3c-bef6-9c829de6f138"/>
+				</line>
+				<line>
+					<reportElement x="442" y="116" width="1" height="10" uuid="2501168f-cee7-49ac-bea7-73bb8b1a8c6c"/>
+				</line>
+				<line>
+					<reportElement x="428" y="113" width="1" height="14" uuid="2346a2c9-5d04-4fd8-861c-d12fb589f75c"/>
+				</line>
+				<staticText>
+					<reportElement x="426" y="129" width="33" height="11" uuid="8c3b44ec-5325-4f3b-9f9a-6529661b13c4"/>
+					<textElement textAlignment="Center">
+						<font fontName="Arial Narrow" size="6" isItalic="true"/>
+					</textElement>
+					<text><![CDATA[Day]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="386" y="128" width="33" height="12" uuid="080aee6f-d024-4a51-a9c2-929c65edb4e1"/>
+					<textElement textAlignment="Center">
+						<font fontName="Arial Narrow" size="6" isItalic="true"/>
+					</textElement>
+					<text><![CDATA[Month]]></text>
+				</staticText>
+				<line>
+					<reportElement x="468" y="113" width="1" height="14" uuid="3836a21b-3b50-41db-a87b-693f1191d8f4"/>
+				</line>
+				<line>
+					<reportElement x="508" y="117" width="1" height="10" uuid="3d2766bf-a655-4768-b11a-ff8dff70ef69"/>
+				</line>
+				<staticText>
+					<reportElement x="475" y="129" width="33" height="11" uuid="5625e997-dcab-4531-8199-2d3c6a03af61"/>
+					<textElement textAlignment="Center">
+						<font fontName="Arial Narrow" size="6" isItalic="true"/>
+					</textElement>
+					<text><![CDATA[Year]]></text>
+				</staticText>
+				<line>
+					<reportElement x="416" y="113" width="1" height="14" uuid="3792eab0-7bfe-4abd-8eca-5b17ff43ab78"/>
+				</line>
+				<line>
+					<reportElement x="402" y="116" width="1" height="10" uuid="d9ba1551-1858-435a-95e8-701a45eda508"/>
+				</line>
+				<line>
+					<reportElement x="519" y="113" width="1" height="14" uuid="fcad230b-de65-4010-90b6-2bf82e5c9a60"/>
+				</line>
+				<line>
+					<reportElement x="388" y="113" width="1" height="14" uuid="793acd67-3e41-4f05-843b-77d0bb08a221"/>
+				</line>
+			</elementGroup>
+			<staticText>
+				<reportElement x="361" y="118" width="17" height="12" uuid="458c2c88-89e9-4eab-966a-dcbf8b53988e"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[LMP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="141" width="7" height="12" uuid="cb0f146f-cc1a-4a42-84bd-d6b1a09b640d"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[G]]></text>
+			</staticText>
+			<line>
+				<reportElement x="370" y="149" width="15" height="1" uuid="be4bd06b-951a-4328-a8f9-f378a958998b"/>
+			</line>
+			<staticText>
+				<reportElement x="391" y="142" width="7" height="12" uuid="e428d81a-2c4f-419c-9e82-7376e4de1acd"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[P]]></text>
+			</staticText>
+			<line>
+				<reportElement x="399" y="149" width="15" height="1" uuid="9f6c93f5-e0be-4235-b920-ee386684503d"/>
+			</line>
+			<staticText>
+				<reportElement x="421" y="143" width="1" height="12" uuid="7b953e30-3059-471d-a3ff-6780536bb9c1"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[(]]></text>
+			</staticText>
+			<line>
+				<reportElement x="425" y="151" width="13" height="1" uuid="4c116c90-af8e-4610-8b33-5d912bdd298e"/>
+			</line>
+			<staticText>
+				<reportElement x="439" y="144" width="1" height="12" uuid="4da778e6-add2-4496-b984-16f5000605d2"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[,]]></text>
+			</staticText>
+			<line>
+				<reportElement x="441" y="151" width="13" height="1" uuid="e26c8245-0e3d-4e86-b834-e8fc46e9eb8e"/>
+			</line>
+			<staticText>
+				<reportElement x="455" y="144" width="1" height="12" uuid="0dfb0c94-73ef-4223-bdea-7747e1095d04"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[,]]></text>
+			</staticText>
+			<line>
+				<reportElement x="457" y="151" width="13" height="1" uuid="4e409673-1d1b-4b9b-987c-1f8a2b1a554b"/>
+			</line>
+			<staticText>
+				<reportElement x="471" y="144" width="1" height="12" uuid="b3479051-eff1-48e7-8596-1b9e13e8aee9"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[,]]></text>
+			</staticText>
+			<line>
+				<reportElement x="473" y="151" width="13" height="1" uuid="b8b348f2-6ccf-4ef8-9ab1-5503f016279b"/>
+			</line>
+			<staticText>
+				<reportElement x="487" y="143" width="1" height="12" uuid="69678f46-70f9-44a1-9fa2-58928e91961b"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="151" width="1" height="12" uuid="e7964eb0-4524-4ce0-805f-ff9c798aebed"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[T]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="446" y="151" width="1" height="12" uuid="93dfb5e2-74c7-402e-8154-d4f41f3aa208"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[P]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="463" y="151" width="1" height="12" uuid="3443c58c-a0f1-4dcf-aa71-55aca28dd4be"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[A]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="478" y="151" width="1" height="12" uuid="0e68179e-885b-4315-9d54-32d422d4179a"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[L]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="183" y="17" width="31" height="13" forecolor="#CC0000" uuid="6844fe11-3151-45d7-9101-7f29fce64d9d"/>
+				<textElement>
+					<font fontName="Arial Narrow" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PART II]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="159" width="139" height="12" uuid="340e0872-e737-434c-8436-e1e6585ea52a"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[ 3. Obstetric risk factors]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="171" width="60" height="12" uuid="2426c7af-b07e-42c3-8ed9-40f032d05c0b"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[a.  Multiple pregnancy]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="185" width="60" height="12" uuid="65c99bf3-b1ec-4fdc-ac4f-06cacac57ffc"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[b.  Ovarian cyst]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="198" width="60" height="12" uuid="8ee0d47d-61d2-4fae-a4d0-70ae5ab3514d"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[c.  Myoma uteri]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="101" y="173" width="8" height="8" uuid="b8680dca-9e5e-4b05-80fa-e9c8056a1911"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="101" y="186" width="8" height="8" uuid="7957a0a7-6624-49fe-b4cb-1a0542c21a1b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="101" y="199" width="8" height="8" uuid="cd851d4e-f969-4814-add7-d4a85ac07767"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="215" y="200" width="8" height="8" uuid="a27a2c6d-eb1b-43a9-9aba-df789197439e"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="132" y="199" width="60" height="12" uuid="8f4803b1-f5ec-4b59-ab7f-22925c3db538"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[f.   History of stillbirth]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="132" y="186" width="73" height="12" uuid="b23d680f-3e8e-4c2e-a20c-0aab8218c2fd"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[e.  History of 3 miscarriages]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="215" y="174" width="8" height="8" uuid="0731dc84-f9c0-4057-80e0-1080d129c187"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="215" y="187" width="8" height="8" uuid="77920dec-1bcf-4092-a656-0ffc84f4ac08"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="132" y="173" width="60" height="12" uuid="40125cab-8fe5-4964-9096-0bb80213a444"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[d.  Placenta previa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="270" y="187" width="73" height="12" uuid="48ac4086-8d6d-4d31-876e-2736e216615f"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[h.  History of eclampsia]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="353" y="201" width="8" height="8" uuid="dd2ec64e-91ab-4343-98ec-c69d49eb7603"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="270" y="200" width="72" height="12" uuid="eb0a194b-06bf-4e62-8c0d-e492b82c3bf6"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[i.  Premature contraction]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="353" y="175" width="8" height="8" uuid="e8206dfb-bcf1-4958-ab53-649bbdb30673"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="270" y="174" width="72" height="12" uuid="73fe0cec-2ecd-482c-8520-5407fa13fb03"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[g.  History of pre-eclampsia]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="353" y="188" width="8" height="8" uuid="d6aa291c-b689-4a7a-bb6a-6d72e00002fa"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="4" y="213" width="139" height="12" uuid="eecdaefa-54cd-4d7c-8e06-7c5d40b371ae"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[4.  Medical/Surgical risk factors]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="102" y="244" width="8" height="8" uuid="11a342e1-fee4-48cf-a572-d89475d69e50"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="19" y="256" width="60" height="12" uuid="933c4640-befa-4718-9c62-966fa11d9a5b"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[c.  Diabetes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="230" width="72" height="12" uuid="49127eb7-b607-4e0e-b919-6842bc74b484"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[a.  Hypertension]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="102" y="257" width="8" height="8" uuid="69ddb90e-3381-456a-a771-670b2cbd233f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="102" y="231" width="8" height="8" uuid="6a8277bf-2c5a-40b9-a618-f115fc11185b"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="19" y="243" width="73" height="12" uuid="16a10f7d-49a4-4066-8434-4da70be3b29e"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[b.  Heart Disease]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="132" y="243" width="73" height="12" uuid="9a283f13-54ff-4642-8c58-c010de343a78"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[e.  Obesity]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="215" y="257" width="8" height="8" uuid="4e6def99-dd2f-41bf-bdde-7504819f1175"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="215" y="231" width="8" height="8" uuid="9ec0e2ab-16b6-4e3b-8005-5cb797643c8a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="215" y="244" width="8" height="8" uuid="3cd1264e-1a8b-4868-89cc-94352af23ef7"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="132" y="256" width="60" height="12" uuid="708a1b09-c246-4001-bcbd-01390573d229"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[f.   Moderate to severe asthma]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="132" y="230" width="72" height="12" uuid="6844fb22-437b-45dd-bb38-d3012043d92d"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[d.  Thyroid Disorder]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="271" y="257" width="60" height="12" uuid="b0f419eb-d015-48fe-85c1-d1a9316647a8"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[i.  Bleeding disorders]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="354" y="232" width="8" height="8" uuid="2555da5f-5aad-4895-8db2-86e657e27af4"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="354" y="245" width="8" height="8" uuid="9914309c-c56a-4d35-a3df-12a48eb932fa"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="354" y="258" width="8" height="8" uuid="9c5adaf7-9156-4571-8610-edb4499c18cb"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="271" y="231" width="72" height="12" uuid="b63efb3a-7a4d-4b46-b5aa-823c0400d9a0"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[g.  Epilepsy]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="271" y="244" width="73" height="12" uuid="e0c4787a-f323-4d02-81c6-5921d429bb04"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[h.  Renal disease]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="519" y="247" width="8" height="8" uuid="be2556f7-6111-4abf-8ec6-5fc4ff5e2067"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="519" y="234" width="8" height="8" uuid="66c1517c-5dd2-46ec-828e-9abeab4c13c7"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="393" y="232" width="114" height="12" uuid="07b3a455-5153-4a27-a34d-f01bc7bde780"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[j.  History of previous cesarian section]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="393" y="245" width="73" height="12" uuid="f2e62cc0-f907-46c2-9610-2d8945118f70"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[k.  History of uterine myomectomy]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="273" width="74" height="12" uuid="7d19d82d-5b9a-4fc5-8f8a-06557297abd0"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[5.   Admitting Diagnosis]]></text>
+			</staticText>
+			<line>
+				<reportElement x="102" y="284" width="425" height="1" uuid="04b0de7b-df5b-47f9-993d-91faad66c2a6"/>
+			</line>
+			<staticText>
+				<reportElement x="6" y="286" width="74" height="12" uuid="0fb81d63-d1d0-4312-9540-5f7fcab93c09"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[6.  Delivery Plan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="35" y="304" width="111" height="12" uuid="f96a249d-872c-4ea9-929d-17b952c4c8d3"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[ Orientation to MCP/Availment of Benefits]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="304" width="5" height="10" forecolor="#FF3300" uuid="81e916c3-f660-468d-9d18-6665d9a791f1"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[a.]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="167" y="305" width="8" height="8" uuid="789c9d63-6dc6-4af2-85eb-ad26ad6380a9"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="166" y="313" width="9" height="12" uuid="f68f60e3-28a1-4797-9acd-1b9a8ea89496"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[yes]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="193" y="305" width="8" height="8" uuid="e181f16a-b352-4659-9586-82b0b3cc97fb"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="192" y="313" width="9" height="12" uuid="61c4ffbf-3219-457d-977a-6b6e6c818b85"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[no]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="270" y="305" width="5" height="10" forecolor="#FF3300" uuid="61f427ea-cdc7-4aa2-baa1-e949359685dd"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[b.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="275" y="305" width="70" height="12" uuid="dbd5f03e-af60-4eda-b455-358bf041bbb4"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[  Expected date of delivery]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="366" y="316" width="25" height="9" uuid="8fc55e8a-9f67-4112-9f71-d8ad1628d07e"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="6" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Month]]></text>
+			</staticText>
+			<line>
+				<reportElement x="403" y="301" width="1" height="14" uuid="b9914e03-f430-4306-980d-58414bb1a6aa"/>
+			</line>
+			<line>
+				<reportElement x="435" y="308" width="6" height="1" uuid="c940c4af-3193-4c70-a21a-c2b424e6aa56"/>
+			</line>
+			<line>
+				<reportElement x="430" y="301" width="1" height="14" uuid="05c5e2dd-d003-4658-9916-43f59da46365"/>
+			</line>
+			<line>
+				<reportElement x="417" y="304" width="1" height="10" uuid="1827d4cf-6b8a-40b7-8736-010630f25d2b"/>
+			</line>
+			<line>
+				<reportElement x="443" y="301" width="1" height="14" uuid="3229774b-c885-4418-b2f0-a4cbad61061a"/>
+			</line>
+			<line>
+				<reportElement x="364" y="314" width="27" height="1" uuid="d42f15fd-b4eb-406f-94bf-1d2f2d1e9c28"/>
+			</line>
+			<line>
+				<reportElement x="444" y="314" width="50" height="1" uuid="4451239c-7c63-400b-9e1c-dac0052030ad"/>
+			</line>
+			<line>
+				<reportElement x="494" y="301" width="1" height="14" uuid="ec50bf1d-be56-4058-bc60-c1ca246fd959"/>
+			</line>
+			<line>
+				<reportElement x="469" y="305" width="1" height="10" uuid="a9bf92ca-9b7d-47a4-917b-7f235e9132d8"/>
+			</line>
+			<line>
+				<reportElement x="404" y="314" width="27" height="1" uuid="a19e756b-d2fa-4672-8a6f-5c07cf9440a2"/>
+			</line>
+			<staticText>
+				<reportElement x="401" y="317" width="33" height="8" uuid="185bf21f-bda7-4b13-b4ba-cb72fc5e9c04"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="6" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Day]]></text>
+			</staticText>
+			<line>
+				<reportElement x="395" y="308" width="6" height="1" uuid="76efc3d2-b1f2-4819-a79e-6e4ee5d439c5"/>
+			</line>
+			<line>
+				<reportElement x="455" y="304" width="1" height="10" uuid="ce070bf0-dce7-46bd-8ccc-5b8cc47013a0"/>
+			</line>
+			<staticText>
+				<reportElement x="450" y="317" width="33" height="8" uuid="0e1d058a-cc4b-4a37-850e-38dabccc4745"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="6" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Year]]></text>
+			</staticText>
+			<line>
+				<reportElement x="391" y="301" width="1" height="14" uuid="7a659191-d3e8-4545-a5e5-fb8d167fa2f0"/>
+			</line>
+			<line>
+				<reportElement x="377" y="304" width="1" height="10" uuid="21108097-0209-497c-aa9c-6b14ff975ca6"/>
+			</line>
+			<line>
+				<reportElement x="483" y="305" width="1" height="10" uuid="c1ba4c32-59e5-4608-80af-37b3218d5c32"/>
+			</line>
+			<line>
+				<reportElement x="363" y="301" width="1" height="14" uuid="e6e04880-bf0f-47ee-a73f-e73f618403de"/>
+			</line>
+			<staticText>
+				<reportElement x="5" y="327" width="111" height="12" uuid="8b6e4c87-b3dc-4cc5-a5c1-0b8e55f0b235"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[7.Follow-up Prenatal Consultation]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="343" width="5" height="10" forecolor="#FF3300" uuid="21c35d12-e96a-468c-b790-422f89fed3ca"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[a.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="343" width="71" height="12" uuid="c90d07b9-169c-4e14-93b0-e1c94b32ef54"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[  Prenatal Consultation No.]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="111" y="342" width="21" height="10" uuid="299a4414-2eb0-4fb0-a88b-c6936ace5321"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="14" y="359" width="40" height="12" uuid="a0904985-68ba-4a61-9d52-ecd9972ce024"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[  Date of visit ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="359" width="5" height="10" forecolor="#FF3300" uuid="1bdc485d-3b99-48ee-af7c-bc350ab01387"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[b.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="361" width="25" height="10" uuid="ca85e4e8-8161-4658-b57b-2d427ec10555"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="5" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[(mm/ dd/ yy)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="374" width="40" height="12" uuid="6e3bcff7-4ccb-478d-9aa3-80c8888e20db"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[  AOG in weeks]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="374" width="5" height="10" forecolor="#FF3300" uuid="4bd517ba-6b8a-4eed-a680-c5acf436931d"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[c.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="390" width="5" height="10" forecolor="#FF3300" uuid="0a5d9fa0-a869-46e9-8d00-ace44a3be7ae"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[d.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="390" width="55" height="12" uuid="e45d9e69-ca70-46d8-aa2e-91ae0272745e"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[Weight & Vital signs:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="404" width="8" height="10" forecolor="#FF3300" uuid="385f978e-89f0-4614-a941-9495f55c2caa"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[d.1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="24" y="404" width="55" height="12" uuid="7846e1e6-e6e9-4a25-aba3-8dfcc44cecd6"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[  Weight]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="417" width="8" height="10" forecolor="#FF3300" uuid="f16cef00-806e-41f7-b861-5344157812bf"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[d.2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="24" y="417" width="55" height="12" uuid="07f41050-c2e6-45c7-b71d-d27d1e730d7c"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[  Cardiac Rate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="432" width="8" height="10" forecolor="#FF3300" uuid="65420795-45ac-4850-8f6f-dd357d76c320"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[d.2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="24" y="432" width="55" height="12" uuid="f1460376-3805-4145-bf96-fb9105ad3b0b"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[ Respiratory Rate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="461" width="8" height="10" forecolor="#FF3300" uuid="b2335c29-abf3-4d99-bfbe-d2f3df76fabe"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[d.4]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="446" width="8" height="10" forecolor="#FF3300" uuid="3c49c8d8-00d4-405c-9d92-6939d76e2c40"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[d.3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="24" y="446" width="55" height="12" uuid="b736d76c-d54e-4cc9-8259-d65fa4d09b57"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[  Blood Pressure]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="24" y="461" width="55" height="12" uuid="dcab1624-f51f-4f80-939a-3be4426359f1"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[  Temperature]]></text>
+			</staticText>
+			<line>
+				<reportElement x="98" y="368" width="452" height="1" uuid="6233f159-c4c1-4546-84b4-1b6d2da36b6d"/>
+			</line>
+			<line>
+				<reportElement x="98" y="355" width="1" height="14" uuid="39662458-1673-4b84-a54f-786a81704153"/>
+			</line>
+			<line>
+				<reportElement x="140" y="355" width="1" height="14" uuid="5aa3e760-69d3-4090-b582-50260bd59e1e"/>
+			</line>
+			<line>
+				<reportElement x="111" y="360" width="1" height="9" uuid="041abc98-cf9e-493f-ba96-545bbb9e6b98"/>
+			</line>
+			<line>
+				<reportElement x="126" y="360" width="1" height="9" uuid="c2664008-bc4e-43a5-a269-e06b305fda55"/>
+			</line>
+			<rectangle>
+				<reportElement x="103" y="375" width="35" height="10" uuid="25c49c77-9378-4cea-8137-7ca0e7529b34"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="116" y="343" width="10" height="9" uuid="91d3d9e3-49ad-41c7-ba3e-af1177ef783c"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[2nd]]></text>
+			</staticText>
+			<line>
+				<reportElement x="180" y="355" width="1" height="14" uuid="1002903e-30fc-429f-942a-b400c1fa2c77"/>
+			</line>
+			<line>
+				<reportElement x="165" y="360" width="1" height="9" uuid="872384b0-35c6-4280-be08-73940124a709"/>
+			</line>
+			<staticText>
+				<reportElement x="160" y="343" width="10" height="9" uuid="99f3db43-5f1c-45ec-a76c-80dc2f551459"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[2nd]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="148" y="342" width="21" height="10" uuid="ecb0abb0-69d2-46ba-a6b4-8423ae37a926"/>
+			</rectangle>
+			<line>
+				<reportElement x="152" y="360" width="1" height="9" uuid="a241cd19-ebea-4048-ad50-a574d62a1c01"/>
+			</line>
+			<line>
+				<reportElement x="194" y="360" width="1" height="9" uuid="62b05f51-21fb-4b49-8e0e-76d996666f5c"/>
+			</line>
+			<rectangle>
+				<reportElement x="190" y="342" width="21" height="10" uuid="def54045-cb3c-4716-b9eb-57ce09fe0ee4"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="154" y="343" width="10" height="9" uuid="a4c847df-8b3e-483d-a210-f7d57f7dcc59"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[3rd]]></text>
+			</staticText>
+			<line>
+				<reportElement x="207" y="360" width="1" height="9" uuid="8a898988-38b3-4f67-81e7-577b98a98274"/>
+			</line>
+			<line>
+				<reportElement x="222" y="355" width="1" height="14" uuid="1a17c820-3f87-444b-a36a-7e38f62ca4de"/>
+			</line>
+			<rectangle>
+				<reportElement x="231" y="342" width="21" height="10" uuid="5b15085c-c5a5-4331-ba2d-db1e7a41f218"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="196" y="343" width="10" height="9" uuid="3669cf21-c203-4317-8ff7-e1e5e7afd83b"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[4th]]></text>
+			</staticText>
+			<line>
+				<reportElement x="263" y="355" width="1" height="14" uuid="1f70642a-b7bf-4b90-ab32-c7d71f50ccc0"/>
+			</line>
+			<line>
+				<reportElement x="235" y="360" width="1" height="9" uuid="4b589679-bd30-41a5-b475-260a39671dff"/>
+			</line>
+			<line>
+				<reportElement x="248" y="360" width="1" height="9" uuid="64cb2ea3-f03f-4217-93f0-8b5c66510953"/>
+			</line>
+			<rectangle>
+				<reportElement x="272" y="342" width="21" height="10" uuid="3099808f-51ed-44e3-bf54-7089681595cc"/>
+			</rectangle>
+			<line>
+				<reportElement x="304" y="355" width="1" height="14" uuid="7e0de83e-013e-4253-a0af-5f710e5f39aa"/>
+			</line>
+			<line>
+				<reportElement x="289" y="360" width="1" height="9" uuid="a3a95bc0-316f-4c3d-b43b-7a8997b28508"/>
+			</line>
+			<staticText>
+				<reportElement x="277" y="343" width="10" height="9" uuid="98d3c619-de73-4a0e-81f9-c0cbacb3ad47"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[6th]]></text>
+			</staticText>
+			<line>
+				<reportElement x="276" y="360" width="1" height="9" uuid="9a08f3fb-e73d-47e4-99ee-c8f8d399970e"/>
+			</line>
+			<staticText>
+				<reportElement x="326" y="343" width="10" height="9" uuid="5536dcb6-d7e8-43df-b029-a379f6840f8e"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[2nd]]></text>
+			</staticText>
+			<line>
+				<reportElement x="318" y="360" width="1" height="9" uuid="936a5f4f-7d15-4a49-a9d8-af58d536f1d0"/>
+			</line>
+			<line>
+				<reportElement x="346" y="355" width="1" height="14" uuid="872f7394-8549-4a68-9fe1-85cb01d49e4b"/>
+			</line>
+			<rectangle>
+				<reportElement x="314" y="342" width="21" height="10" uuid="27156c94-6956-41d5-8ea9-82deb2f74c83"/>
+			</rectangle>
+			<line>
+				<reportElement x="331" y="360" width="1" height="9" uuid="0896bcf0-6090-4fda-8f29-b80f2cb6b3ae"/>
+			</line>
+			<rectangle>
+				<reportElement x="396" y="342" width="21" height="10" uuid="030c7639-d179-4d48-b92e-eb7ee8494bae"/>
+			</rectangle>
+			<line>
+				<reportElement x="428" y="355" width="1" height="14" uuid="021643e6-b70d-4497-9640-d21fb23ea14d"/>
+			</line>
+			<line>
+				<reportElement x="400" y="360" width="1" height="9" uuid="4e6658b7-3339-4c18-8889-db1252998a5d"/>
+			</line>
+			<line>
+				<reportElement x="358" y="360" width="1" height="9" uuid="00d41ce2-499e-4184-b703-99b164e2270f"/>
+			</line>
+			<line>
+				<reportElement x="386" y="355" width="1" height="14" uuid="88e30f63-9e22-44db-885b-01b5568ce77b"/>
+			</line>
+			<line>
+				<reportElement x="413" y="360" width="1" height="9" uuid="27a4a73d-9ed4-42fc-be25-240d14ca2570"/>
+			</line>
+			<line>
+				<reportElement x="371" y="360" width="1" height="9" uuid="df5a8f0b-bbc1-43b6-8580-2effb821cd29"/>
+			</line>
+			<rectangle>
+				<reportElement x="356" y="342" width="21" height="10" uuid="f5dfbcac-117a-4807-b4f8-492f589f6a4f"/>
+			</rectangle>
+			<line>
+				<reportElement x="443" y="360" width="1" height="9" uuid="51a357ed-7a90-4b1e-ae79-8f4f6132f039"/>
+			</line>
+			<rectangle>
+				<reportElement x="439" y="342" width="21" height="10" uuid="aa204135-93a0-4df2-af3c-1b7783bcee8b"/>
+			</rectangle>
+			<line>
+				<reportElement x="471" y="355" width="1" height="14" uuid="e88c26f9-7429-4882-a104-ce4c95d2ff9d"/>
+			</line>
+			<line>
+				<reportElement x="456" y="360" width="1" height="9" uuid="011fb794-4d7c-483b-99ae-2b5db647e875"/>
+			</line>
+			<line>
+				<reportElement x="484" y="360" width="1" height="9" uuid="4b0b92e4-54a7-4f71-9f5f-b911d484328f"/>
+			</line>
+			<line>
+				<reportElement x="497" y="360" width="1" height="9" uuid="dcdacfb5-1f6e-4a56-965c-90b23b293354"/>
+			</line>
+			<line>
+				<reportElement x="509" y="355" width="1" height="14" uuid="ed1e6d3c-2c5b-4d7b-b999-43ef7dbd89e2"/>
+			</line>
+			<rectangle>
+				<reportElement x="480" y="342" width="21" height="10" uuid="8c3d79f1-d003-4614-bbdf-7bf6ac5f1551"/>
+			</rectangle>
+			<line>
+				<reportElement x="549" y="355" width="1" height="14" uuid="5fe47efa-fb30-4d21-8764-f81ee65d8f61"/>
+			</line>
+			<line>
+				<reportElement x="524" y="360" width="1" height="9" uuid="67df9f4d-eb64-4e76-9da5-9b2148503978"/>
+			</line>
+			<rectangle>
+				<reportElement x="519" y="342" width="21" height="10" uuid="392191a6-415b-4204-83ab-05a02637c804"/>
+			</rectangle>
+			<line>
+				<reportElement x="537" y="360" width="1" height="9" uuid="8a83638a-f746-4b32-8df2-77480df84636"/>
+			</line>
+			<staticText>
+				<reportElement x="237" y="343" width="10" height="9" uuid="1c9c2887-c4c1-4b66-8d2b-50b7101c59ae"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[5th]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="343" width="10" height="9" uuid="e33f2fea-a16c-45ca-82af-37b28cc6810e"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[7th]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="362" y="343" width="10" height="9" uuid="b589bfd6-593a-4ce1-b930-333387178e19"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[8th]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="402" y="343" width="10" height="9" uuid="1c048ea3-6821-4377-a3a2-b8beadda3700"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[9th]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="443" y="343" width="12" height="9" uuid="2251311e-2ca2-4d97-8ea8-9d0921512878"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[10th]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="485" y="343" width="12" height="9" uuid="e3656c0a-dbe8-4b27-86b5-2aeae6cc98d2"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[11th]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="524" y="343" width="12" height="9" uuid="30df9476-225e-423b-8c53-d29ddabc1b9a"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[12th]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="144" y="375" width="35" height="10" uuid="dcfdccc5-4486-48b6-8c47-1fa7604e38b6"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="185" y="375" width="35" height="10" uuid="4af0e0de-fd31-410f-bade-ba7cf20cfcdb"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="226" y="375" width="35" height="10" uuid="864cff53-e2c5-45eb-8a71-383695d18403"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="268" y="375" width="35" height="10" uuid="78641d4e-a61c-4d52-bb9a-1afa7bea4a5a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="309" y="375" width="35" height="10" uuid="5ab8b18b-6859-45ae-8e25-5579fb508267"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="103" y="404" width="35" height="10" uuid="62ab270b-dd16-4529-94f4-b6eb8808bdbd"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="103" y="418" width="35" height="10" uuid="1690cd8b-ef9b-40e0-b9e4-b4c5e477864d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="103" y="433" width="35" height="10" uuid="e951b71c-0609-457f-bdea-0c533681599a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="103" y="448" width="35" height="10" uuid="3e53eef6-93de-4cf8-95c9-f398b3d9f239"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="103" y="461" width="35" height="10" uuid="5fc0c8e1-0759-43b4-b6d8-324ada5aae47"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="144" y="462" width="35" height="10" uuid="993015a4-5b59-4527-b9f2-1aa161e195cb"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="144" y="449" width="35" height="10" uuid="52c7ff2e-ab2a-43ea-b53b-5baeeabf52df"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="144" y="405" width="35" height="10" uuid="18b07abe-c709-40ef-933a-c5ba4f2cdb35"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="144" y="434" width="35" height="10" uuid="634b5e9e-412b-4086-bd61-e36578761034"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="144" y="419" width="35" height="10" uuid="461a0936-96a0-433f-a04f-d46280be4a44"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="186" y="461" width="35" height="10" uuid="4304ba97-6274-400c-89e5-b912361df83f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="186" y="404" width="35" height="10" uuid="59fe3da5-3217-4bc8-a250-71cb0c41e624"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="186" y="418" width="35" height="10" uuid="a217f32d-b3d5-41fd-a359-8d73b551f16e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="186" y="433" width="35" height="10" uuid="ac5f975f-9d33-4635-81a0-d31dc5ede41a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="186" y="448" width="35" height="10" uuid="16439ba6-ec4f-4746-be59-99a63a7e46e2"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="226" y="405" width="35" height="10" uuid="1ed612c3-e311-41cd-a5f7-680eb5433a52"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="226" y="419" width="35" height="10" uuid="c9ea97b8-1a11-4a56-917d-ee68a24dd3c0"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="226" y="449" width="35" height="10" uuid="5a529123-2ef3-4e2f-80ff-a3b982d87976"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="226" y="434" width="35" height="10" uuid="5d589e64-03b0-444e-96d4-dabca504fe35"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="226" y="462" width="35" height="10" uuid="56efbec2-9117-418c-8063-b8eff28d6f9d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="268" y="433" width="35" height="10" uuid="6694b319-9b39-49c6-815a-89a20230e3b2"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="268" y="418" width="35" height="10" uuid="89edacd2-55fd-4240-8e37-78655ae15f98"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="268" y="404" width="35" height="10" uuid="a3cbfc01-e927-4700-a261-1ab715180519"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="268" y="448" width="35" height="10" uuid="5c9740cf-8d14-4e43-a325-560d2031cf6f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="268" y="461" width="35" height="10" uuid="f6d2c58e-cd1d-40fa-99c0-df41a2f4430c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="309" y="449" width="35" height="10" uuid="547ecef9-fe19-4930-beca-d09ecc709e3c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="309" y="405" width="35" height="10" uuid="c06d5fa3-3423-43e7-bbc6-fdb4926b6b9b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="309" y="419" width="35" height="10" uuid="42415c55-1a99-4bd6-8e56-91f7f85fb716"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="309" y="434" width="35" height="10" uuid="75a09cc4-478d-4e92-ba4b-13c78b64d0bf"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="309" y="462" width="35" height="10" uuid="3279e9d5-ac54-4f0a-81e6-1dabd1281427"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="349" y="375" width="35" height="10" uuid="a460c99e-c7c3-4549-8749-99a6f43dbd59"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="349" y="449" width="35" height="10" uuid="775da1ac-cc49-4ef3-8400-0d7e1ef18449"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="349" y="419" width="35" height="10" uuid="af4a0fc8-2586-4113-a63c-8461c9bad06e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="349" y="462" width="35" height="10" uuid="bcc2177e-07b4-49e9-a626-32c00df5ff08"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="349" y="434" width="35" height="10" uuid="0dad6162-b308-4e7a-9099-c2dad64f7bd8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="349" y="405" width="35" height="10" uuid="34f2ab90-92e1-43c1-b97e-e51954dfd8d2"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="390" y="462" width="35" height="10" uuid="b29a0fd9-826c-4ed0-a877-65a8fff16589"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="390" y="405" width="35" height="10" uuid="1d8a8a43-de00-4adc-bbe7-6033b919f373"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="390" y="419" width="35" height="10" uuid="51046ecf-6f03-4a23-9ac3-f4e8c21875df"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="390" y="434" width="35" height="10" uuid="9dac2520-d4da-44e2-b619-a7605f1ff016"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="390" y="449" width="35" height="10" uuid="9b106e3d-4e99-416d-aa96-1421f76f6668"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="390" y="375" width="35" height="10" uuid="570062ea-6c8d-4494-99f5-19c6b68d5cb6"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="433" y="375" width="35" height="10" uuid="4e657722-134e-44dd-a1e1-44d054812c5a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="433" y="405" width="35" height="10" uuid="c7cffd7e-6e3f-441c-a171-95cd1664f8e3"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="433" y="449" width="35" height="10" uuid="204ef922-2f7f-4282-9a7f-f1526fabbfa7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="433" y="419" width="35" height="10" uuid="78b5c320-73b0-4de5-9111-ff02f77d12f2"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="433" y="434" width="35" height="10" uuid="d6ab6cef-4405-41cb-a3cb-da103addcae4"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="433" y="462" width="35" height="10" uuid="3cc41541-3ba3-489c-8687-d9ef62affddf"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="475" y="375" width="35" height="10" uuid="0ffe0d7e-3dec-49b4-a505-d106279e7d38"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="475" y="434" width="35" height="10" uuid="7775ea62-d6b8-4459-8e85-010fe6c4f9db"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="475" y="449" width="35" height="10" uuid="ef31f28a-faa0-4f07-b304-3a7ce21873ea"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="475" y="405" width="35" height="10" uuid="39c7d19b-e1e0-4fc4-b0cc-019a6a5004e4"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="475" y="462" width="35" height="10" uuid="614c9ca9-6329-4977-a3f9-c4d930c89020"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="475" y="419" width="35" height="10" uuid="7042f3dc-33c4-4d88-9e6b-012e36a4202a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="515" y="448" width="35" height="10" uuid="72114f56-0e2e-42f3-ad6b-895d88108bec"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="515" y="374" width="35" height="10" uuid="89757a6e-a50b-4ed3-80ed-3ca808fc9c26"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="515" y="404" width="35" height="10" uuid="8ef06730-00bf-40d1-bf0b-581ba6a829f7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="515" y="433" width="35" height="10" uuid="780c94e4-c94e-460c-b05c-701180323e16"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="515" y="418" width="35" height="10" uuid="71aa9b42-3c46-4c1f-bf5e-6f6804cd9064"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="515" y="461" width="35" height="10" uuid="795048fa-37ec-48fc-ab16-e4060fb3f91b"/>
+			</rectangle>
+			<line>
+				<reportElement x="0" y="477" width="555" height="1" uuid="77214e6c-fddb-48b3-ab8a-1c0988137292"/>
+			</line>
+			<line>
+				<reportElement x="0" y="493" width="555" height="1" uuid="2ce6abb9-8da2-4290-b20a-2d15b3f76259"/>
+			</line>
+			<staticText>
+				<reportElement x="186" y="480" width="164" height="13" forecolor="#CC0000" uuid="b23d9556-11dd-47f0-b024-2aa748cdb623"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DELIVERY OUTCOME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="495" width="111" height="12" uuid="f2fbdce3-68cd-4e68-a0c9-1e4341572710"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[8. Date and Time of Delivery]]></text>
+			</staticText>
+			<line>
+				<reportElement x="250" y="503" width="1" height="10" uuid="4405415d-7ad5-483d-ae48-edfe8e6d83c8"/>
+			</line>
+			<line>
+				<reportElement x="145" y="512" width="27" height="1" uuid="d140af2a-a007-4ab1-bca6-4cbdb06a28b9"/>
+			</line>
+			<line>
+				<reportElement x="275" y="499" width="1" height="14" uuid="9055ab5f-c9a7-480f-a225-e01172231725"/>
+			</line>
+			<staticText>
+				<reportElement x="182" y="515" width="33" height="11" uuid="62f781a8-44c1-4d60-870c-1511b2a71080"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="6" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Day]]></text>
+			</staticText>
+			<line>
+				<reportElement x="264" y="503" width="1" height="10" uuid="983d338c-9c24-418c-b8bb-ef1f3204085b"/>
+			</line>
+			<staticText>
+				<reportElement x="142" y="514" width="33" height="12" uuid="e554286c-161f-4261-98bd-a21657f23d6c"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="6" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Month]]></text>
+			</staticText>
+			<line>
+				<reportElement x="198" y="502" width="1" height="10" uuid="8b572473-a603-47ef-972d-d10dee4ab8c5"/>
+			</line>
+			<line>
+				<reportElement x="236" y="502" width="1" height="10" uuid="cad01049-4dcc-4ac3-a0e6-db89aa36413c"/>
+			</line>
+			<line>
+				<reportElement x="211" y="499" width="1" height="14" uuid="496c39a1-378d-49f0-97b4-58bc283173f5"/>
+			</line>
+			<line>
+				<reportElement x="185" y="512" width="27" height="1" uuid="42732168-6196-4aa2-bcc0-e3910cae8682"/>
+			</line>
+			<line>
+				<reportElement x="216" y="506" width="6" height="1" uuid="64dcc374-da0f-4075-8413-1e318a95daf0"/>
+			</line>
+			<line>
+				<reportElement x="225" y="512" width="50" height="1" uuid="0fa97a62-ec82-4f65-9928-dd0ab7e08041"/>
+			</line>
+			<staticText>
+				<reportElement x="231" y="515" width="33" height="11" uuid="637e846a-1005-4f73-bbd2-8622dcd737d3"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="6" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Year]]></text>
+			</staticText>
+			<line>
+				<reportElement x="172" y="499" width="1" height="14" uuid="7507572c-bda6-430c-bda3-9014fdd657ec"/>
+			</line>
+			<line>
+				<reportElement x="184" y="499" width="1" height="14" uuid="e3f3b7fb-bc02-4241-a36f-b8aecc27b425"/>
+			</line>
+			<line>
+				<reportElement x="176" y="506" width="6" height="1" uuid="cb800221-9fbf-4e84-8558-86c22564338e"/>
+			</line>
+			<line>
+				<reportElement x="158" y="502" width="1" height="10" uuid="ce9abd4e-2db6-48e8-a078-24844ead3545"/>
+			</line>
+			<line>
+				<reportElement x="144" y="499" width="1" height="14" uuid="f4fb8640-f12d-4038-a4f9-ac96f17f95f8"/>
+			</line>
+			<line>
+				<reportElement x="224" y="499" width="1" height="14" uuid="b56b6a11-49dc-4034-84ff-a7f4e3fad062"/>
+			</line>
+			<staticText>
+				<reportElement x="123" y="501" width="33" height="12" uuid="2f365938-9c47-4ba5-ae45-3b26f686b892"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="8" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Date     ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="320" y="512" width="24" height="1" uuid="a9d328be-e153-48eb-8fab-8a7c9e59ad35"/>
+			</line>
+			<line>
+				<reportElement x="320" y="499" width="1" height="14" uuid="dc7b51c5-8604-4a3c-adf4-45ca52c85455"/>
+			</line>
+			<line>
+				<reportElement x="343" y="499" width="1" height="14" uuid="983b2036-64eb-4d95-b3d0-1bcbba84dfbc"/>
+			</line>
+			<staticText>
+				<reportElement x="293" y="501" width="33" height="12" uuid="0caff0cb-e55b-4cd1-9f9f-e5a02e35fe7c"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="8" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="334" y="502" width="33" height="12" uuid="4658d45f-7c7a-4290-8368-0615a1e5ba33"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="8" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[AM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="316" y="513" width="33" height="11" uuid="7e25aea3-721d-42ce-96f9-736ee01fd1d7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="6" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[hh:mm]]></text>
+			</staticText>
+			<line>
+				<reportElement x="370" y="499" width="1" height="14" uuid="e982a33e-6009-438e-9612-2080fc487f64"/>
+			</line>
+			<line>
+				<reportElement x="370" y="512" width="24" height="1" uuid="491e994b-d3eb-4cef-9440-c76ad7f9c5f9"/>
+			</line>
+			<staticText>
+				<reportElement x="366" y="513" width="33" height="11" uuid="9c17b9e6-befb-4116-995d-adfb494a08e7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="6" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[hh:mm]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="384" y="502" width="33" height="12" uuid="ea63796b-56c6-4d4d-a8d6-954fe21c4b1b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="8" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[PM]]></text>
+			</staticText>
+			<line>
+				<reportElement x="393" y="499" width="1" height="14" uuid="b1141012-4c6e-48f7-833a-0aa2a587e7e4"/>
+			</line>
+			<staticText>
+				<reportElement x="5" y="526" width="111" height="12" uuid="66ae99c1-6f74-4786-a758-d18c78d707aa"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[9.   Maternal Outcome:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="77" y="538" width="45" height="1" uuid="9a65eacd-d23c-43d4-b2cf-8d75b85bb864"/>
+			</line>
+			<staticText>
+				<reportElement x="124" y="527" width="67" height="12" uuid="b598d3e2-bbad-4f2f-8e30-6a043b1cb39e"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[Pregnancy Uterine,]]></text>
+			</staticText>
+			<line>
+				<reportElement x="183" y="537" width="100" height="1" uuid="a48a454f-b83f-4267-8599-5ada3f0b6077"/>
+			</line>
+			<line>
+				<reportElement x="291" y="537" width="70" height="1" uuid="b80b3ae1-3d9c-4925-89e1-419341ecd146"/>
+			</line>
+			<line>
+				<reportElement x="372" y="538" width="70" height="1" uuid="dcebcff8-50aa-4c89-8d11-e728af10ba00"/>
+			</line>
+			<staticText>
+				<reportElement x="205" y="538" width="57" height="12" uuid="5bdad954-a2d9-45a4-9dac-611051e3d0cc"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[AOG by LMP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="297" y="538" width="57" height="12" uuid="4830a4e2-3039-439a-94c3-5789f07b25ea"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[Manner of Delivery]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="377" y="539" width="57" height="12" uuid="55e34a33-e3a7-4893-9f73-9b3b4d8a43a9"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[Presentation]]></text>
+			</staticText>
+			<line>
+				<reportElement x="67" y="566" width="106" height="1" uuid="094a8dc2-f702-4ca4-9353-f69003ed197d"/>
+			</line>
+			<staticText>
+				<reportElement x="377" y="567" width="57" height="12" uuid="1a821f0c-7105-4d60-8969-be65f749bb49"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[APGAR Score]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="297" y="566" width="57" height="12" uuid="66ad2244-6723-49a2-841c-f698d216796f"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[Birth Weight (grm)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="557" width="68" height="12" uuid="43e736da-b3ff-43e7-a732-66cddeea0fc0"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[10. Birth Outcome:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="183" y="565" width="100" height="1" uuid="d78ea56c-49a4-4603-9ed3-74f7a0e94b7d"/>
+			</line>
+			<line>
+				<reportElement x="372" y="566" width="70" height="1" uuid="aa8c40d9-4e79-485f-a9b4-456bf1120aed"/>
+			</line>
+			<line>
+				<reportElement x="291" y="565" width="70" height="1" uuid="624b8e85-d4a1-4c0b-84f9-e19a54541775"/>
+			</line>
+			<staticText>
+				<reportElement x="205" y="566" width="57" height="12" uuid="3fb5d085-c27e-41f3-99b8-c64a64f92b89"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[Sex]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="91" y="568" width="57" height="12" uuid="f29a55aa-9de1-4cdd-b99b-19bfb45b45d4"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[Fetal Outcome]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="590" width="218" height="12" uuid="d9442413-fed1-414a-a8ad-ff3e44998672"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[11.   Scheduled Postpartum  follow-up consultation 1 week after delivery]]></text>
+			</staticText>
+			<line>
+				<reportElement x="284" y="602" width="27" height="1" uuid="091171c7-b059-43db-a41b-bbf87431b1c0"/>
+			</line>
+			<line>
+				<reportElement x="335" y="592" width="1" height="10" uuid="85b64d90-71a0-4e0b-8a86-8386e2f0beb4"/>
+			</line>
+			<line>
+				<reportElement x="374" y="589" width="1" height="14" uuid="e3f2dcbe-1a8a-480c-ae23-b5ff5303d2de"/>
+			</line>
+			<line>
+				<reportElement x="324" y="602" width="50" height="1" uuid="ce96709c-ec96-4c5e-9b80-f13a5555952a"/>
+			</line>
+			<line>
+				<reportElement x="349" y="593" width="1" height="10" uuid="ce06a011-9926-44de-a4ca-f2d91ca55303"/>
+			</line>
+			<line>
+				<reportElement x="315" y="596" width="6" height="1" uuid="f29a8579-1e50-436b-8c2a-414115a79ad0"/>
+			</line>
+			<staticText>
+				<reportElement x="281" y="605" width="33" height="11" uuid="bd0d166f-f1c9-4b15-94d5-85ea54704b04"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="6" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Day]]></text>
+			</staticText>
+			<line>
+				<reportElement x="283" y="589" width="1" height="14" uuid="b236b190-cdb3-4a8f-9679-cf9b622fa6bd"/>
+			</line>
+			<line>
+				<reportElement x="310" y="589" width="1" height="14" uuid="15fb3007-23cc-4bf2-99ba-78f583f22130"/>
+			</line>
+			<line>
+				<reportElement x="271" y="589" width="1" height="14" uuid="96284a2e-4cff-43bd-9d75-aaad53b19e16"/>
+			</line>
+			<line>
+				<reportElement x="243" y="589" width="1" height="14" uuid="bdc80edd-6261-432a-82b9-3d55c231f528"/>
+			</line>
+			<staticText>
+				<reportElement x="330" y="605" width="33" height="11" uuid="977e4fff-9674-4b37-a36d-30eae7d2a43f"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="6" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Year]]></text>
+			</staticText>
+			<line>
+				<reportElement x="244" y="602" width="27" height="1" uuid="48a6a03d-ac08-4bac-8cc8-ebb2cbd60df9"/>
+			</line>
+			<line>
+				<reportElement x="297" y="592" width="1" height="10" uuid="8a6e215c-b5b8-43c6-94b3-a4451067b17a"/>
+			</line>
+			<staticText>
+				<reportElement x="241" y="604" width="33" height="12" uuid="6e314a6a-c501-41f8-b0fe-4c53164eefbc"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="6" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Month]]></text>
+			</staticText>
+			<line>
+				<reportElement x="363" y="593" width="1" height="10" uuid="9bc89e0f-091c-4ea6-8b60-5a3ec541fc9d"/>
+			</line>
+			<line>
+				<reportElement x="257" y="592" width="1" height="10" uuid="0f003798-61ff-4b32-9f3c-3430333cfdac"/>
+			</line>
+			<line>
+				<reportElement x="323" y="589" width="1" height="14" uuid="b3f5a8c0-6948-4ce7-89e5-57482e27c244"/>
+			</line>
+			<line>
+				<reportElement x="275" y="596" width="6" height="1" uuid="344e30f6-2cb3-42a9-804b-243ae82328a4"/>
+			</line>
+			<staticText>
+				<reportElement x="3" y="619" width="103" height="12" uuid="584717f9-2faa-444d-b450-c35f5de60f1a"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[ 12. Date and Time of Discharge ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="177" y="628" width="6" height="1" uuid="cb923b91-8a8d-4b64-8c7e-0a4f679c1b7a"/>
+			</line>
+			<line>
+				<reportElement x="185" y="621" width="1" height="14" uuid="101d81ec-b3c8-4186-b91e-f2b8ccd4c3e1"/>
+			</line>
+			<line>
+				<reportElement x="186" y="634" width="27" height="1" uuid="81967bc9-8251-4fa1-885f-9b96acb793e1"/>
+			</line>
+			<line>
+				<reportElement x="237" y="624" width="1" height="10" uuid="d2e532fb-1799-4dc1-96d5-1bc331bee2d4"/>
+			</line>
+			<staticText>
+				<reportElement x="143" y="636" width="33" height="12" uuid="bf0dc7e4-69c2-4033-bfb3-1fda12d074ba"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="6" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Month]]></text>
+			</staticText>
+			<line>
+				<reportElement x="159" y="624" width="1" height="10" uuid="2760e21f-f2d2-4def-ab07-10613904b985"/>
+			</line>
+			<staticText>
+				<reportElement x="232" y="637" width="33" height="11" uuid="47417b3e-3537-4d4e-bf27-d4122fc0f3ad"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="6" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Year]]></text>
+			</staticText>
+			<line>
+				<reportElement x="146" y="634" width="27" height="1" uuid="fc85e3d5-6a5f-4c6e-abe8-f87edffac489"/>
+			</line>
+			<line>
+				<reportElement x="199" y="624" width="1" height="10" uuid="332b564f-1b17-4e27-8330-0e4d89f3d67c"/>
+			</line>
+			<line>
+				<reportElement x="212" y="621" width="1" height="14" uuid="6cd23726-14be-4270-a9af-4c27d5921975"/>
+			</line>
+			<line>
+				<reportElement x="145" y="621" width="1" height="14" uuid="ecee883b-b27a-4f3c-9445-c15aa17eaa76"/>
+			</line>
+			<staticText>
+				<reportElement x="183" y="637" width="33" height="11" uuid="7d8e0ffb-11f8-436c-b38f-e53b1e982c2a"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="6" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Day]]></text>
+			</staticText>
+			<line>
+				<reportElement x="225" y="621" width="1" height="14" uuid="03e7cab0-076e-43a4-8a86-6dfb883bd07c"/>
+			</line>
+			<line>
+				<reportElement x="276" y="621" width="1" height="14" uuid="d0b4a7d2-2c44-4ecd-81e2-f5f8afde28d7"/>
+			</line>
+			<line>
+				<reportElement x="226" y="634" width="50" height="1" uuid="49034a53-bd5a-48eb-9e81-17770fec8ced"/>
+			</line>
+			<line>
+				<reportElement x="251" y="625" width="1" height="10" uuid="a3fc28cf-3ff4-46d8-bdb2-b944d24b1086"/>
+			</line>
+			<line>
+				<reportElement x="265" y="625" width="1" height="10" uuid="a3aa5c17-234a-4380-8146-f65db5b67928"/>
+			</line>
+			<line>
+				<reportElement x="173" y="621" width="1" height="14" uuid="12ad6cd6-b478-4e98-88eb-98406a38828f"/>
+			</line>
+			<line>
+				<reportElement x="217" y="628" width="6" height="1" uuid="099b63da-5fb1-4a06-94ec-e7320d04b9b1"/>
+			</line>
+			<staticText>
+				<reportElement x="124" y="623" width="33" height="12" uuid="a1403aa2-2735-44a5-961c-8be0f2f9a507"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="8" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Date     ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="383" y="626" width="33" height="12" uuid="7cafc79e-2f03-499f-8a6b-251dbf9d27f7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="8" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[PM]]></text>
+			</staticText>
+			<line>
+				<reportElement x="369" y="623" width="1" height="14" uuid="70cecc71-33a8-4671-b3f8-b08d0d6abfe6"/>
+			</line>
+			<staticText>
+				<reportElement x="365" y="637" width="33" height="11" uuid="9e6e2c78-cec6-47ed-a3c7-d16cf7e84c0f"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="6" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[hh:mm]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="292" y="625" width="33" height="12" uuid="b89da715-6583-4b6f-b7b1-ee6517f2cd89"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="8" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="333" y="626" width="33" height="12" uuid="64a1c0f1-7412-40b8-a4b0-84761774b48b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="8" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[AM]]></text>
+			</staticText>
+			<line>
+				<reportElement x="319" y="623" width="1" height="14" uuid="6192ba04-cefc-44df-a612-c055aa9a5dfd"/>
+			</line>
+			<line>
+				<reportElement x="392" y="623" width="1" height="14" uuid="d4727ffa-3cda-4d43-824c-332ec77317d6"/>
+			</line>
+			<line>
+				<reportElement x="319" y="636" width="24" height="1" uuid="80ff23ed-c802-4a7a-ad4f-9b7bb568f897"/>
+			</line>
+			<staticText>
+				<reportElement x="315" y="637" width="33" height="11" uuid="bd92e307-4868-46cc-88f1-54f1078259cc"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="6" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[hh:mm]]></text>
+			</staticText>
+			<line>
+				<reportElement x="369" y="636" width="24" height="1" uuid="eefe249e-4fe0-45b5-9717-60faff07f16a"/>
+			</line>
+			<line>
+				<reportElement x="342" y="623" width="1" height="14" uuid="db32b9b8-fdaa-4767-aa18-816c4b3f1f14"/>
+			</line>
+			<line>
+				<reportElement x="0" y="653" width="555" height="1" uuid="7b1806d7-4e9c-402a-80d1-125a56d900e1"/>
+			</line>
+			<line>
+				<reportElement x="0" y="669" width="555" height="1" uuid="f7de63a9-4c0f-4695-96c1-60b75b428f7b"/>
+			</line>
+			<staticText>
+				<reportElement x="179" y="656" width="164" height="13" forecolor="#CC0000" uuid="65f0d419-4f1a-45ec-832c-e7455e69f76f"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" isBold="true"/>
+				</textElement>
+				<text><![CDATA[POSTPARTUM CARE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="681" width="103" height="12" uuid="946dbbb9-3ecc-4e18-8ea5-37900fb8a589"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[13.  Perineal wound care ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="308" y="672" width="33" height="12" uuid="e5edead3-8363-4db4-9663-8216f74b6ae3"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="6" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Done]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="421" y="672" width="33" height="12" uuid="3377f4be-4551-49f5-b533-470be8c4dec3"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="6" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Remarks]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="320" y="682" width="9" height="9" uuid="41b0a77b-ddd9-4c6b-9802-f4c5213b6e3c"/>
+			</rectangle>
+			<line>
+				<reportElement x="334" y="690" width="220" height="1" uuid="cb9eeb55-db6e-4395-b824-3cc9305fc696"/>
+			</line>
+			<staticText>
+				<reportElement x="3" y="694" width="152" height="12" uuid="42caf8c5-25e6-4821-a398-adff3a9593ea"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[14.  Signs of Maternal Postpartum Complications]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="320" y="695" width="9" height="9" uuid="c5f9ebc5-b453-4a5e-ab87-a1996184bc8a"/>
+			</rectangle>
+			<line>
+				<reportElement x="334" y="699" width="220" height="1" uuid="36bcafb6-7d7e-4adb-8279-39017c514ef5"/>
+			</line>
+			<staticText>
+				<reportElement x="3" y="707" width="152" height="12" uuid="e592cdc5-b5f1-4e97-9082-eb73b386bb50"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[15.   Counselling and Education]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="17" y="720" width="152" height="12" uuid="a43be5bd-908a-42ff-a8cb-a974450c919a"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[a.  Breastfeeding and Nutrition]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="17" y="733" width="152" height="12" uuid="4efdd622-e2e9-4485-839f-b7a8ed18c5fc"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7"/>
+				</textElement>
+				<text><![CDATA[b.  Family Planning]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="320" y="721" width="9" height="9" uuid="cb1495b3-c65d-4fea-b51f-19ee38663adf"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="320" y="733" width="9" height="9" uuid="25d4142a-507f-4570-9e0f-5d032314e9ea"/>
+			</rectangle>
+			<line>
+				<reportElement x="334" y="725" width="220" height="1" uuid="c92c79de-20f0-4b52-971e-310a0121a0f1"/>
+			</line>
+			<line>
+				<reportElement x="335" y="737" width="220" height="1" uuid="3665b90c-62ae-45ff-9b50-a5495c0dcb90"/>
+			</line>
+			<staticText>
+				<reportElement x="4" y="745" width="152" height="12" uuid="83b77803-031d-4b58-bfae-4b5562e38888"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[16.   Provided family planning service to patient ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="155" y="748" width="69" height="12" uuid="53219232-9afe-4989-8803-88aa2989d516"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="6"/>
+				</textElement>
+				<text><![CDATA[ (as requested by patient)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="760" width="169" height="12" uuid="38f98199-49d0-4523-b66d-750672e7e832"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[17.   Referred to partner physician for Voluntary Surgical Sterilization ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="772" width="152" height="12" uuid="bcdfaa6f-756b-45c2-8795-7a60a9feed77"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[18. .  Schedule the next postpartum follow-up]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="170" y="762" width="69" height="12" uuid="0f4869ef-8334-4c1e-8fdb-019d240ac1de"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="6"/>
+				</textElement>
+				<text><![CDATA[(as requested by pt.)]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="785" width="555" height="45" uuid="4e277b1d-219b-4ae1-a01e-3b05d835027e"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="5" y="786" width="152" height="12" uuid="908dbcc6-fc59-4e5d-ac07-64aed35086e1"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[19. Certification of Attending Physician/Midwife:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="42" y="796" width="251" height="12" uuid="0ca3497a-fdd5-421c-8be8-79b5410bdae8"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="8" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[I certify that the above information given in this form are true and correct.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="68" y="817" width="179" height="1" uuid="6e9e3cd8-5c10-43d4-aa93-94eb23a806d0"/>
+			</line>
+			<staticText>
+				<reportElement x="70" y="818" width="169" height="12" uuid="bc14e889-ec36-422a-97b3-a321213b28a5"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="6" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Signature Over Printed Name of Attending Physician/Midwife]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

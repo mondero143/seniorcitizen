@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="yearlypayment" pageWidth="612" pageHeight="936" columnWidth="612" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="b122063a-af11-4e72-ab60-23ea5f82ee5f">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="95"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="fscap2"/>
+	<property name="ireport.scriptlethandling" value="0"/>
+	<property name="ireport.encoding" value="UTF-8"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<parameter name="masname1" class="java.lang.String"/>
+	<parameter name="objid" class="java.lang.String"/>
+	<parameter name="ydatefrom1" class="java.lang.String"/>
+	<parameter name="ydateto1" class="java.lang.String"/>
+	<parameter name="ybarangay1" class="java.lang.String"/>
+	<parameter name="ystreet" class="java.lang.String"/>
+	<parameter name="ypreparedby" class="java.lang.String"/>
+	<parameter name="yposition" class="java.lang.String"/>
+	<parameter name="street1" class="java.lang.String"/>
+	<parameter name="parameter1" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select * from yearduepayment]]>
+	</queryString>
+	<field name="objidyear" class="java.lang.Integer"/>
+	<field name="id" class="java.lang.String"/>
+	<field name="dateyeardue" class="java.lang.String"/>
+	<field name="oryeardue" class="java.lang.Integer"/>
+	<field name="amountyeardue" class="java.lang.Double"/>
+	<field name="yearduestatus" class="java.lang.String"/>
+	<field name="objRef" class="java.lang.String"/>
+	<field name="totalamount" class="java.lang.Double"/>
+	<field name="dateissued" class="java.lang.String"/>
+	<field name="status" class="java.lang.String"/>
+	<field name="datereturned" class="java.lang.String"/>
+	<field name="user" class="java.lang.String"/>
+	<field name="delete_user" class="java.lang.String"/>
+	<field name="unpaid" class="java.lang.Double"/>
+	<field name="masname" class="java.lang.String"/>
+	<variable name="totalamount" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{amountyeardue}]]></variableExpression>
+	</variable>
+	<variable name="total" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{amountyeardue}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="189" splitType="Stretch">
+			<staticText>
+				<reportElement key="staticText" x="9" y="76" width="593" height="30" uuid="09186b11-96f7-40c7-b665-fbcb12190b87"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[INDIVIDUAL YEARLY LEDGER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText" x="420" y="122" width="59" height="20" uuid="42786985-916b-4237-8a5f-6f7f6313a8ad"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date From:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-1" x="9" y="13" width="592" height="16" uuid="bfd5a639-0a6f-4b8c-a99f-4040944bd521"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[San Carlos City Federation of Senior Citizens Association of the Philippines]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-2" x="9" y="29" width="592" height="16" uuid="9279bea6-7c6f-43b3-b171-c8c420f1b217"/>
+				<textElement textAlignment="Center">
+					<font isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[(SCCFSCAP) SAN CARLOS CITY NEGROS OCCIDENTAL, INDIVIDUAL LEDGER OF MAS DEATH PAYMENT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText" x="420" y="142" width="59" height="20" uuid="a6c2446e-ed0b-482b-9a39-2f879313b6cd"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date To:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="480" y="123" width="100" height="19" uuid="109ea02a-0357-4988-805d-355bb9a57ae2"/>
+				<textFieldExpression><![CDATA[$P{ydatefrom1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="480" y="143" width="100" height="19" uuid="2bd0f932-b9b3-464e-a2ba-35fe6c4a61aa"/>
+				<textFieldExpression><![CDATA[$P{ydateto1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="84" y="123" width="100" height="20" uuid="75378d89-e212-4b66-b91d-8f0263a3b831"/>
+				<textElement verticalAlignment="Top"/>
+				<textFieldExpression><![CDATA[$P{masname1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="50" y="122" width="45" height="18" uuid="4d7ba119-4843-4496-ae79-8e606296987a"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText" x="51" y="150" width="60" height="20" uuid="daf0639b-036c-4a23-bb5b-29df03f280c3"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Barangay:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="103" y="151" width="264" height="30" uuid="9590c7b5-7506-47f0-bb9c-e27f010a26f0"/>
+				<textFieldExpression><![CDATA[""+$P{ystreet}+", "+$P{ybarangay1}+""]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="18" splitType="Stretch">
+			<staticText>
+				<reportElement x="50" y="0" width="154" height="18" uuid="d0f5c4b5-4124-4ddd-abd4-adc789a5b47f"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[DATE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="204" y="0" width="216" height="18" uuid="fc640148-efbc-4787-bc08-30d84c74ac6f"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[ORNO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="0" width="133" height="18" uuid="34f78dbe-28c0-4911-a79f-8991e4671dd2"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[AMOUNT]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="50" y="0" width="154" height="20" uuid="599dda1a-27a5-4cb6-8566-8e234200aabb"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{dateyeardue}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="204" y="0" width="216" height="20" uuid="8ac62a6c-37e6-455b-9510-f8495f30c215"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{oryeardue}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="0" width="133" height="20" uuid="cf5b04a7-6aec-4c88-90cd-1f7005acc905"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{amountyeardue}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="154" splitType="Stretch">
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="420" y="0" width="133" height="20" uuid="d29d7786-35f7-408e-b362-3393243d1985"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$V{totalamount}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="50" y="0" width="370" height="20" uuid="d1f99f56-0090-4b89-9c8e-b8ab56f1d0ad"/>
+				<box rightPadding="2">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ Total Amount Paid:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="87" width="101" height="18" uuid="0d51b015-cfbb-421c-a3db-d58f7dff6397"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Prepared by:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="84" y="105" width="183" height="20" uuid="62b236bc-acfc-4052-b8e0-1490465b4492"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ypreparedby}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="84" y="125" width="183" height="20" uuid="8a98910e-f3ec-4ee6-ac3f-1368eed47eef"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{yposition}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>
